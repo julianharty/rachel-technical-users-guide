@@ -1,6 +1,1 @@
 chapter1.txt
-introduction.txt
-topics.txt
-safeworkingpractices.txt
-commissioningRACHEL.txt
-usbRACHEL.txt
