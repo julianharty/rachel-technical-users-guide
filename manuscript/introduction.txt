@@ -1,15 +1,15 @@
-==Introduction to the Technical User's Guide to RACHEL ==
+# Introduction to the Technical User's Guide to RACHEL 
 
-=== Aims of this book ===
+## Aims of this book 
 
-=== Different flavours of RACHEL ===
+### Different flavours of RACHEL
 Android, Windows, Debian (on Raspberry Pi's)
 
 
-==Proposed Agenda==
+## Proposed Agenda
 Today's 1-day workshop will help you to learn how to use free, open software and materials to help improve education wherever you work. We will work together for several sessions so we can learn with and from each other. We have various topics to try and cover during today, our progress will depend on you and your needs, questions, and involvement. My main role is as facilitator and coach based on my work in applying digital education in various countries, both directly and by helping other people. I hope we will manage to establish strong working relationships today and during this elearning-africa conference. 
 
-===An overview of RACHEL: the software and the contents.===
+### An overview of RACHEL: the software and the contents.
 RACHEL is a project originally created not in the technology hotspots of Silicon Valley, London, or the First World; instead it started in Central America where volunteers wanted to help improve education in their schools, even when there was little money to pay for materials, books, or even teachers. The project expanded from Spanish to English and several other languages. As we were able to collect and collate more materials specific versions became possible, for farmers, for medicine, etc. and in Kenya, for instance, demand for installation exceeds the ability of the small World Possible team. 
 
 RACHEL comprises several free software applications and lots of content that's free to use and free to distribute. Technically there are several technical flavours, these include:
@@ -19,19 +19,19 @@ RACHEL comprises several free software applications and lots of content that's f
 
 The project continues to improve and evolve. Currently releases are packaged as single massive 'image' files. The main distributions are packaged for USB memory, typically on a USB memory stick, or on an sd-card for either Android or Raspberry Pi computers. Technical users can tweak these distributions so they can work on Android devices, other operating systems, etc.
 
-===Blocks of software=== 
+### Blocks of software
 <<insert figure of block diagram here>>    
 * explain the main block diagrams;
 * perhaps explain why we have various servers, etc. and the opportunities to improve performance, reduce complexity, etc.
 
-===Power=== 
+###Power
 Computers only run when they have sufficient good-quality power. Many portable computers include a reserve of power in a battery. How long the computer can run on a battery varies on factors such as power management software, power consumption, and the condition - or health - of the battery. Small computers, including Raspberry Pi's can run effectively even using realtively small external batteries for up to a day. We can configure the software to use less power and thereby enable the computer to run for longer. Some batteries, including those in Laptops and Android Tablets can be charged while they are powering the rest of the computer. Some models of external battery can do likewise, and effectively behave as uninterruptable power supplies (UPS) for Raspberry Pi's, etc. This means we can use these computers even when power is problematic, or if we have lost power for hours at a time PROVIDED we can find an effective power source to recharge the battery before it has sacrificed all it's capacity (keeping the computer running).
 
 In some rural areas there is little or no practical power on site, and even some areas in cities lack reliable mains power. Sometimes we can charge devices (and external batteries) nearby, for instance in an Internet cafe, or at home. Sometimes we can use suitable solar panel(s). Ideally batteries and devices should be powered while they are being used so the don't wear out the internal chemistry of the batteries. If we have several batteries, we may be able to charge some when they are idle, or where it is impractical for the source of power to reach where the device needs to be used. 
 
 How to keep the computers running even when power is faulty or not available. Batteries, Charging, Solar Panels, Power Adapters, etc.
 
-====Good-enough quality of equipment, including chargers====
+####Good-enough quality of equipment, including chargers
 There is a vast range of equipment available for virtaully every aspect of technology (apart from Raspberry Pi's where the choices are limited to which model to use). The qualities of equipment varies massively. Some equipment is of very poor quality and has a high risk of failing or causing connected equipment to fail. Some may even electrocute us. Others may provide high-quality service for decades. 
 Genuine & branded equipment tends to be more reliable than unbranded items or counterfeights. We can and should test new equipment. Power meters can help to show the power characteristics of the devices. 
 

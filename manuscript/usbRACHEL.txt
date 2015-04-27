@@ -1,4 +1,4 @@
-==USB RACHEL==
+# USB RACHEL
 RACHEL can be used from a USB drive. Much of the contents can be used directly, for instance, by accessing the files directly in a Web Browser (using the file:// prefix), or ZIM files can be read and used in the Kiwix application.. However, some of the software, for instance Khan Academy Lite needs to run as a web server.
 
 USB RACHEL includes an embedded web server and database that can be used on Windows Computers. 

@@ -1,4 +1,4 @@
-==Safe Working Practices==
+# Safe Working Practices
 * protect your equipment against viruses
 ** write protect tabs, read-only storage e.g. CD-ROMs, DVDs.
 ** use trustworthy anti-virus scanners, relat-time protection, etc.

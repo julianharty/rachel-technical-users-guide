@@ -1,10 +1,10 @@
-==Commissioning RACHEL==
+# Commissioning RACHEL
 One way to get RACHEL running on a server is to simply follow the intructions to use one of the existing image files, write that image to a memory card, and boot a Raspberry Pi using that image. This may be enough for some of us. However, that RACHEL server will be a clone of one created by developers the World Possible project team, and unlikely to be ideal for our environment and context. For instance the network settings might clash with other networks in your environment; the image may be too large, etc. We can customise RACHEL servers during and after commissioning the server.
 
-==Commissioning using image files created by World Possible==
+## Commissioning using image files created by World Possible
 The project team provide documentation online on Google Docs on how to download, install and run RACHEL as a server on Windows computers, details are available at https://docs.google.com/document/d/1pfuhaV040BhN14uQ511sjmpLqsUzJ6Vy9BIH3KBh7PM/edit
 
-===Configuring an exisitng RACHEL server===
+### Configuring an exisitng RACHEL server
 * network
 * server name
 * content packages
