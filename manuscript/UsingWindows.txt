@@ -1,0 +1,12 @@
+Using Microsoft Windows
+- Viruses
+- Administrator Access
+- Terminal Emulator (putty)
+- File Transfer
+- Networking
+ 
+Run As Administrator right-click menu
+
+Pitfalls
+- Commands refuse to execute e.g. Win32DiskImager.exe
+
