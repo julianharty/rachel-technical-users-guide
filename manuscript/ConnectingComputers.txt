@@ -1,0 +1,51 @@
+#Connecting Computers
+Computers only need a network if they want to connect to other computers, including the Internet and computers in a local area network (LAN). There are various aspects to the connection, including how the signals go from one computer to another, and how computers can find each other once they are part of a working network. We will cover the various aspects in this chapter so that we can connect computers together in a working network.
+
+##Signals and Cables
+There are two established ways to connect computers. These are using radio waves and physical cables. Physical networks are almost always using technology called Ethernet. Radio waves vary in frequency, tere are several 'bands' of frequencies used for Wi-Fi networks, and others for mobile phone networks such as 3G, CDMA, and 4G (also known as Wi-Max). We seldom need to be concerned with the details unless there are conflicts between several Wi-Fi networks.
+
+Ethernet uses physical cables which connect devices to either a network switch or a network hub. We will cover these in the next section.
+
+Wi-fi networks use one of the 802.11 standards. Again, we seldom need to worry about the details. We mention these standards in case you ever need to troubleshoot connection problems.
+###Wi-Fis, switches and hubs
+One thig is common to all networks, they need some at least one physical device to make the connection to other devices, even when the connection is over Wi-Fi or a mobile network.
+
+* Wi-Fi: There are two variations of Wi-Fi network. One connects between two computers and may be called an ad-hoc or point-to-point network. This can be useful to share information and materials between those two devices, however it's a very restricted network as other computers can't participate so we seldom use them. More common and often more relevant for projects such as RACHEL is an Infrastructure network where one device is the master and controls the network. The RACHEL server is generally configured to be the device that controls and provides a Wi-Fi network. 
+
+In some locations there may already be a device configured to provide the Wi-Fi network, if so, then we recommend you configure the RACHEL device to be part of that network rather than trying to provide another network. We also recommend you allocate a fixed IP address for the RACHEL server so that other computers, and the users, can find that server easily and consistently. Allocate an IP address that isn't part of the pool of loan addresses (provided by the DHCP service). This will reduce the chances of conflicts within the local network.
+
+##Finding each other
+Each computer and device on a network will need a known IP address in order to communicate with each other and with computers beyond the local network. Sometimes we may end up using an IP address directly, for instance in the web browser of an Android tablet to connect to the RACHEL server. 
+### IP addresses
+There are two main standards for IP network addresses, the older ubiquitous IPv4 addresses, such as 192.168.1.102 and the newer IPv6 addresses. We will only cover the IPv4 addresses here as they're the primary format used by the various computers and other devices we use. 
+
+This book aims to explain the essential aspects simply. This means we decided to exclude some precsion and some accuracy of the entire topic. There are plenty of materials available elsewhere that should provide more accurate extra information. Cisco's CCNA is a well respected qualification for people who want to understand networks well.
+
+IP addresses need to be unique for each device on a network. Otherwise there may be problems that stop one or more of the computers from communcating as they will be competing for what is intended to be a unque address. Computers aren't very smart about trying to resolve the problems, an administrator of the computer network may need to make changes to the network configuration and/or to the network settins of devices trying to use that network. 
+
+IP addresses can be provided on loan, preallocated, or configured on the local computer or device. Typically IP address are configured on servers, such as the RACHEL server, and on network devices such as the Wi-Fi router. 
+
+Most other devices request an IP address when they start using a network. They also need to ask if they want the loan to be extended, as each loan has a finite period. Loans vary from several minutes for very crowded networks such as an Internet Cafe, to many months where the administrator doesn't expect much to change in terms of the computers using that network. 
+
+If our assumptions when configuring the loan period are incorrect some devices may not be able to connect to the network.
+
+The addresses are loaned by a service called DHCP. In some cases, such as when the RACHEL server provides the Wi-Fi network, these addresses need to be configured on that server (the preconfigured RACHEL servers are already configured to do so). Wi-Fi routers generally have a web-based administrator's interface where the set of addresses are configured. 
+
+### Local and foreign networks
+Conceptually there are local addresses and foreign ones, somewhere else on another network. Generally we want our computers to share a common, single logical local network. This means that most of the IP address will be the same, this is always the first part of the address, reading from the left. For instance they may all begin with 192.168.1 where only the final part is unique.
+
+If there is an existing computer network available we may want to configure our devices to share that network. To do so we would need to know various parameters such as the name of the Wi-Fi network, any password, etc. For devices where we want to assign a fixed IP address we will also need to know what IP address to use, and other details such as the subnet, the default gateway and the DNS server. We will cover each of these later in this chapter.
+### Subnets
+The subnet is a filter that matches the common part of the addresses, at least for the purposes of this book and our projects. The popular term is the subnet mask, which can be represented in several forms. These include the .dot notation e.g. 192.168.1.x and /24 which represents the number of bits in the network address that remain constant for each address in this network. 
+### Default Gateways
+Computers address each other directly when they share a network. To reach computers in other networks they forward all their requests to a network address known as the 'default gateway'. This may be a device such as a router, or another computer such as a Raspberry Pi. That device is responsible for trying to find a route to connect the computer making the request to the relevant remote device, often another computer such as a web server.
+
+By convention, default gateways often have an IP address that either ends in .1 or .254 Computers need to be told what the address of the defult gateway is. They get this information with their IP address.
+### Names, URLs and IP addresses
+Humans generally prefer to use names than numbers to address things. However, computers including their web browsers actually use the IP address as a number. They need to obtain the correct IP address for whatever name is being used. There are several ways to do so, the most common are either using a DNS Server or a small text file locally on that device. When we use a mobile network or an existing Wi-Fi network they often 'know' where to find the DNS Server which then performs the mapping between the name and the IP address that matches that name. 
+
+Sometimes we may want to configure some of our computers to override several of the names being used so that informaton can be provided within the local network rather than needing an Internet connection. These local settings can help provide updates of software and materials. They can also help reduce undesireable use of potentially expensive and scarce Internet connections, for instance to restrict access to sites such as social networks (Facebook, Twitter, Instagram, etc).
+
+##Configuring a RACHEL Server
+* TBC: until we add the relevant material to this book, a good place to obtain the information is on the wiki of the ka-lite project https://github.com/learningequality/ka-lite
+ 
