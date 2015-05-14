@@ -1,0 +1,53 @@
+#Powering your equipment
+##Introduction
+Computers need reliable, power to be available for as long as we want the computer to operate. Some computers store power, typically in a battery, so the computer can continue working for a period when external power is not available.
+
+Sometimes power is available but poor quality that could potentially cause damage to the contents of the computer or even the computer itself. It's possible to filter, or condition, the power so the quality is improved. 
+
+We can add an external battery to most computers to enable them to have a reservoir of power. Often the external battery is combined with power conditioning which can help increase the reliability of the computer. 
+
+When the computer consumes power, that power leaves the battery. Eventually the battery will run out of power. When the battery runs out of power it can no longer power the computer. If nothing else happens the computer will stop, sometimes abruptly. It's wise and prudent to shutdown a computer before all the power has been used up. Some computers are programmed to do this automatically, others may need us to tell them to shutdown by using commands. Commands are covered in another chapter of this book.
+
+Some batteries can be recharged while they are providing power, others are limited to either being charged or providing power. Generally we prefer using batteries that can be recharged while being used, otherwise our computer will not be available when the battery is being charged. 
+
+###Power for low cost computers and Android Tablets
+Most of our projects use computers powered using USB connections. USB power is 5 volts DC. Therefore much of our work and equipment focuses on USB power. This inclues the solar panels, batteries, and power adapters/chargers. 
+
+###USB power
+USB was originally designed to enable computers to interact with peripheral devices, including keyboards, mice, network adapters, and storage. Many of these devices needed power to be provided, so the USB standard allowed these devices to use up to 500 milli-Amps (mA) of power at 5 volts, a total of 2.5 watts (watts are a common measure of power). 
+
+As devices became more sophisticated some of them needed more power than the original USB standard permitted. Some manufacturers devised their own custom solutions, eventually the industry established standards that allowed devices to communicate with the provider of USB power to negotiate more power for that device. 
+
+The devices and the power provider both need to use a common protocol to communicate effectively. Otherwise the power provider should limit the power to protect itself and the device that is asking for power. Miscommunications between the device and the power can cause problems for us, devices may not work properly when they don't have enough power. Poor quality power supplies may overheat, short-circuit or fail.
+   
+###Batteries
+Batteries use chemical reactions to store power and to provide power. The chemical reactions generate heat, and too much heat may be dangerous to us and to the battery. Over time and as batteries are used they lose their potency. Eventually a battery may become so work out that we cannot usefully use it any more. Old batteries can be recycled which protects our environment.
+
+Batteries have a defined capacity, measured in milli-Amp hours (mAh). They may have a limit on how much power they can provide at any one time. This may affect us if our computer(s) need more power that the battery is able to safely provide, so we try to design our systems so the battery is able to provide more power than whatever is connected to it. The actual capacity of a battery decreases as it loses its potency. Often the decrease also affects how the power is delivered, where a battery suddenly becomes exhausted. We may need to account and allow for this behaviour when designing and implementing a e-learning system, otherwise a system that initially works and serves the users well may start to fail, perhaps in a few months time. Once a system starts failing and becoming unreliable it's much less useful for the users who may become frustrated and stop using the system. 
+
+We can test and measure the behaviours of various batteries in order to buy the most suitable and available models, and so we can design viable e-learning systems.
+
+###Charging and recharging
+Batteries are designed and specified for a number of recharge 'cycles'; for instance I recently bought 2 USB batteries who promise 500 recharge cycles - they should continue working for at least 500 discharges and recharges. Where practical we may want to design our systems so we reduce the number of charge cycles, some computers are designed to do this automatically, however for Raspberry Pi's, recharging USB batteries, and other low-cost small computers we may need to devise a system that does this instead. 
+
+There are several ways we can design these systems. For instance we could have several batteries where we use one until it is almost fully discharged, then unplugged from whatever it's powering and then recharged fully, perhaps using a solar panel or a power adapter/charger.
+
+###Solar Panels
+In the last few years solar panels have become available for USB power. The panels seldom meet the claims in terms of how much power they provide, and the power may not be suitable to power a computer directly, so we need to test the behavour of the panels and design systems so they provide suitable 'clean' power for the computers. 
+
+The power output varies based on the position of the panel relative to the sun. If we install the panel, for instance on a roof, we need to consider and test various locations and angles of the panel so that we can harness as much of the solar power as practical. Measurement tools can help us to do so.
+
+###Power adapters/chargers
+There are various words used to describe the USB power adapters or chargers. In essence these devices consume mains voltage power (often around 230 volts AC) and convert that power to 5 volts DC suitable for USB-powered devices such as Android Tablets and small computers such as the Raspberry Pi.
+
+Each charger has particular characteristics in terms of the quality and amount of power they provide, particularly when the quality of the mains voltage varies, such as during overloading of the power grid, brown-outs, etc. It's unwise to assume that we can use any or every power adapter for our projects, poor quality chargers may cause problems for the services provided and even cause the computers to fail. In some countries there are lots of fake branded equipment, including USB chargers that claim to be from top brand companies such as Apple or Samsung. We need, therefore to choose wisely. Testing the bahaviour of chargers may help us decide which ones are going to work well for our project, context and situation.
+   
+###Measuring power
+Low cost power meters are available for USB. We can use these meters to measure power flowing through a USB cable. This means we can measure power provided from a solar panel, battery, or USB charger. DC power is measured in Volts and (milli-) Amps. The meters may not be 100% accurate, however once we have a good idea of how inaccurate a meter is we can use it to provide representative or comparative readings. I travel with at least one USB power meter so I can easily measure the power at various points in a system. Be careful as the power meter often needs to be connected 'inline', between the source and the consumer of the power. Connecting and disconnecting the power meter disrupts the power to the consumer and if that's a computer it may stop working, and potentially fail.
+ 
+##Power engineering
+TBC here are the main topics I would like to include
+* Duty cycles
+* Power consumption
+* Efficiency
+

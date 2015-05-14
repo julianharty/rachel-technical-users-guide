@@ -1,6 +1,7 @@
 commissioningRACHEL.txt
 introduction.txt
 safeworkingpractices.txt
+Power.txt
 UsingWindows.txt
 topics.txt
 usbRACHEL.txt
