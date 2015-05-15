@@ -16,7 +16,9 @@ We're only going to cover various topics we consider essential, and there's too 
 ###The murky world of Viruses
 
 ####Pirate copies of Windows
+Microsoft wants and needs to earn money to survive and thrive as a company. It licenses versions of Windows to earn money. In return they provide free updates and other software utilities for many years for each release of Windows. They designed Windows so that installation has a unique license key, to identify valid installations. However, people, being inventive, and perhaps unwilling to pay for a license to use Windows have been using pirate copies of Microsoft Windows. Microsoft also uses software to detect whether the installation of Windows is licensed and genuine. If so, they provide updates which include improvements to the security, and they provide anti-virus and other related software tools to try to reduce and prevent viruses from adversely affecting the computer. Pirate versions of Windows are less likely to have the security updates and they may be more likely to be at risk of viruses and the attendant problems.
 
+We advise you to only use genuine licensed copies of Microsoft Windows if you want to use Windows on oyur computer. That way you can take advantage of the latest security updates and other improvements. And for Windows 7 and later, Microsoft provide good quality free anti-virus software: Microsoft Security Essentials. 
 ###Administrator Access
 * Run As Administrator right-click menu
 
