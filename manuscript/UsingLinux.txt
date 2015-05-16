@@ -1,0 +1,14 @@
+#Linux
+
+* What is linux
+* Why do we find it useful
+* How to obtain linux and prepare to install it
+* Installation options: USB drive / CD-ROM, VirtualBox, Dual-boot, Vagrant, etc.
+* Useful sizes of partitions for working with RACHEL
+* Security and other updates
+* Common development tools and commands (vim, compilers, apt-get, apt-file, aptitude, sudo)
+
+##Common flavours of Linux
+* Raspbian
+* Ubuntu (LTS)
+

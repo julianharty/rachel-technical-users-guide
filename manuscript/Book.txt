@@ -3,6 +3,7 @@ introduction.txt
 safeworkingpractices.txt
 Power.txt
 UsingWindows.txt
+UsingLinux.txt
 ConnectingComputers.txt
 topics.txt
 usbRACHEL.txt
