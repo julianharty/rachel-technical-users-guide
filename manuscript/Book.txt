@@ -2,8 +2,10 @@ commissioningRACHEL.txt
 introduction.txt
 safeworkingpractices.txt
 Power.txt
+UsingAndroid.txt
 UsingWindows.txt
 UsingLinux.txt
 ConnectingComputers.txt
 topics.txt
 usbRACHEL.txt
+Paraphenalia.txt

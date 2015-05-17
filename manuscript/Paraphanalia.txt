@@ -1,0 +1,26 @@
+#Paraphenalia
+Projects need more than a few Tablet computers. And in particular, those who setup, configure and maintain the technology need and benefit from a wide range of equipment and software.
+
+* Memory card readers (and writers):
+* Portable Hard disk(s) with copies of software we use. 500GB minimum capacity, 1TB recommended.
+* Cables, adapters, spares:
+* Keyboard and display:
+* Wi-Fi hotspot:
+* [Crossover] Ethernet cable:
+* 3G router, local SIM card with data bundle:
+* Portable loudspeaker:
+* Digital camera for pictures and recording videos:
+* Notebook:
+* Portable projector:
+* Power adapters and power strips:
+* Solar panel & rechargable USB power bank(s):
+* Anti-virus and virus-removal software:
+##Partition formats
+Computer disks and drives need to be formatted before files can be stored on them. There are various common formats in use. Sometimes we need to choose the format carefully otherwise we may run out of space, sometimes unnecessarily, when there are large files (e.g. more than 2GB) and many files (as each file needs to be recorded in an invisible, finite table of files).
+* FAT32: The default format used on many drives when they are new. It has various limitations in terms of capacity of files. Not recommended for RACHEL files. 
+* exFAT: Supported in Windows XP Service Pack 2 and later with an update from Microsoft. 
+* NTFS: Default for Windows disks in computers. Not ideal for removable drives, files may be lost and drives corrupted unless you are both careful and lucky.
+* ext3: Linux only format. May work well for drives intended to be dedicated to Raspberry Pi's and micro SD-cards dedicated to Android Tablets. Like NTFS, not really intended or suitable for removable storage.
+##Travelling with paraphenalia
+We need ways to travel practically with all the paraphenalia, and any other devices, etc. This is particularly important when flying and in areas where we are at risk or opportunistic theft. I travel with various bags, some clear, some stronger fabric bags with zips in bright colours, where I store the many and various pieces of equipment. For this workshop I have brought around 100 discrete pieces of equipment. Technology should always be carried in hand-luggage and be with you on the flight. Be careful to limit the combined weight and dimensions of the hand-baggage otherwise the airline may insist the bag goes in the hold (and then be at greater risk of theft at some airports in the continent).
+ 

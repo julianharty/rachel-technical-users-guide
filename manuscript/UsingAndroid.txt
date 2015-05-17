@@ -1,0 +1,47 @@
+#Using Android
+Android is probably the most popular operating system, or platform as I'll describe it in this book, in the world, at least in terms of the number of users and devices. For RACHEL we'll focus on Android tablets, as they can be used both individually and by small groups. Thankfully, smartphones running Android behave similarly and can be used interchangably. However, the screens of smartphones tend to be much smaller and so they are less suitable for groups. 
+
+There are new versions of Android several times a year. Sometimes the changes include a major release upgrade. Sadly, few existing Android devices receive the major upgrades so we need to make sure our software works well on both the latest and older, still popular versions. At the time of writing Android 2.3 is still used by many users so ideally our software will work with Android 2.3 and later releases. 
+
+##RACHEL and Android
+Android devices can be used in at least 3 ways for RACHEL (and related software).
+1 As a Web browser to view and interact with the various web-based materials available from a RACHEL server.
+2 To run a basic version of RACHEL on the Android device. This can be shared over Wi-Fi with others.
+3 To run some of the software so people can use it directly on the Android device. Examples include Kiwix (the Wikipedia offline reader) and ka-lite (mathematics exercises).
+
+Software programs need to meet various security requirements to run on the Android device. Most Android apps (applications) are downloaded from Google Play where the apps are 'digitally signed' before being sent to the Android device. The Android device checks and approves the signature before allowing the app to be installed. Some of the apps we use are available from Google Play, for instance kiwix is. Others are still experimental or don't meet the criteria Google requires, for instance they don't approve of Web Server apps for security reasons. This means that we provide apps that haven't been signed by Google Play. Normally Android devices refuse to install these apps to protect the device. However, it's possible to change the security settings on the Android device to allow these 'unsigned apps' to be installed.
+
+###Changing the security settings for unsigned apps
+Security settings are changed in the inbuilt Settings app. The details vary by device and version of Android. We will add examples for various devices in future versions of this chapter.
+
+##Choosing Android Tablets
+There are lots of variations in various Android tablets available globally, and even in particular countries there may be 10's or 100's of different models available at a wide range of prices. Here are suggestions and recommendations on how to choose suitable devices. 
+
+Firstly here are some selection criteria:
+* Durability<=>Fragility: durable devices will tend to last a long time in good working condition. Fragile devices may fail pysically e.g. the screen may be smashed and stop working, or internally where the device may fail to boot or run. Good quality covers and screen protectors can help protect the device and increase the useful life of the device.
+* Available Storage: RACHEL, Kiwix, and ka-lite include large volumes of materials. Some tablets have very limited storage available e.g. 1GB, which would limit it to smaller Wikipedia databases. Others may have as much as 50GB available, enough for a full installation of RACHEL (currently roughly 30GB) and other materials. Many devices include a micro SD-card slot which means the storage can be expanded using suitable[1] micro SD-cards. Many devices claim they support a maximum of 32GB micro-SD cards, for a full RACHEL installation 64GB is more practical.
+* Screen Quality and Resolution: Higher-end tablets tend to have far more legible screens that are also easier to read in various lighting conditions. 
+* Physical dimensions and weight: larger screens tend to be easier to read, particularly by a group of people. However, they may be less portable. Lighter devices are considered better, particularly if younger children will be using them as they lack the strength of older children and adults.
+* Power conspumtion, battery duration, recharging:
+* Theft, resale values, traceability:
+* CPU, RAM:
+* Sensors, camera(s):
+* Audio quality:
+* Connectivity options: USB, Wi-Fi, 3G, Bluetooth, etc.
+* Operating system version:
+* Brand, support from manufacturer:
+
+###Useful life    
+
+###What do we intend to use them for?
+
+###Our budget
+
+###Context
+When selecting devices it's also worth considering the contexts of use of these devices.
+* Availability of usable electricity.
+* Quality and availability of Internet access.
+* Sharing the devices, per-user accounts, etc.
+* Availability of useful, relevant contents, formats, apps, etc.
+* Physical environment: dust, heat, sand, liquids.
+* Age of primary users:
