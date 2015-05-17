@@ -62,3 +62,15 @@ Using adb provides an integrated way to send and install and Android APK. Otherw
 * using file transfer & opening the apk file on the device
 ###Uninstalling apps
 Apps can be uninstalled from the Settings application. They can also be deinstalled from another computer by using adb and the root Java package name e.g. adb uninstall org.kiwix.kiwixmobile ;
+
+##Google & other Accounts
+Many devices, including those with Google Apps, require a valid account configuring on the device. Some e.g. Nooks need their account as part of the initial configuration - the device cannot be used until it has a valid account that's been verified by their servers on the Internet. Of course, this means we need a working Internet connection as well as whatever details the account-provider demands. For some countries in Africa setting up an account may be challenging, especially if they want a UK or USA address and credit card details for that account holder.
+
+###Examples of various accounts
+* Google:
+* HTC:
+* Nook: 
+* Amazon: For Kindle Fires.
+
+###Custom Android Operating Systems
+Cyogenmod is the most popular and comprehensive creator and provider of alternative Android releases for many devices. For popular devices there may be several versions already available from this project. These alternative releases may mean we don't need Wi-Fi to configure the device, similarly these custom versions many not need any of the accounts that the standard platform does.
