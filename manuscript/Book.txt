@@ -6,6 +6,7 @@ UsingAndroid.txt
 UsingWindows.txt
 UsingLinux.txt
 ConnectingComputers.txt
-topics.txt
 usbRACHEL.txt
+LinksReferencesAndFurtherReading.txt
 Paraphenalia.txt
+topics.txt

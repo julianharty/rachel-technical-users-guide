@@ -1,2 +1,3 @@
-# Topics
-TBC
+# Suggested Topics
+Here's the place to add any topics we'd like to suggest for this book.
+At the moment we don't have any :) although there's still plenty of work to do improving the current topics and chapters.

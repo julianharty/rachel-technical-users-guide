@@ -1,0 +1,38 @@
+#Links References and Further Reading
+This book does not contain everything, it'd be unwise to even try to do so. Instead, here are pointers to other information that may be relevant, interesting, and even helpful for you. 
+
+##Reaching humans involved in the project
+There are various sets of loosely connnected people who are collaborating on various aspects of RACHEL and the upstream projects. When we know how to reach them we publish the details here.
+* Overall RACHEL Project discussions: https://groups.google.com/forum/#!forum/rachelproject
+* RACHEL Tanzania: https://groups.google.com/forum/#!forum/racheltanzania
+* RACHEL Swahili materials and project: https://groups.google.com/forum/#!forum/rachelswahili
+* The RACHEL development team - for programmer and [other] technical discussions https://groups.google.com/forum/#!forum/racheldev
+* For Kiwix, the offline Wikipedia Reader and related software including zim files http://www.kiwix.org/wiki/Communication
+* For ka-lite (offline Khan Academy videos and mathematics exercises) https://groups.google.com/a/learningequality.org/forum/#!forum/dev and they ask people to file bugs at https://github.com/learningequality/ka-lite/issues
+
+There's more to add, I'll do so as and when I (re-)discover them.
+###Good manners online
+Most of us contribute our time freely, in addition to whatever else we do to earn a living and cope with life's challenges. Like you, we have limited time available to get involved and help people. To help increase the chances of people being able to help you, please do some initial research to see if your questions have been answered online either in one of the groups or in a FAQ (most projects have one), README document, etc. Also please be specific in your request, bug report, etc. and show your workings i.e. explain what you've tried and what you expect(ed) to happen.
+
+##Installation and development guides
+* RACHEL for a Raspberry Pi  http://pi.worldpossible.org/ which includes the link to a much more detailed Google Doc https://docs.google.com/document/d/1wPeiBAnHMNTBMjygqh94LA_LGeKtGG1LaphAxehjIy0/edit
+
+##Software Sources
+* https://github.com/learningequality/ka-lite
+* https://sourceforge.net/projects/kiwix/ 
+* https://github.com/julianharty/hfc-rachel (build scripts and software experiments)
+* This book in raw form :) https://github.com/julianharty/rachel-technical-users-guide
+
+### Downloads of complete RACHEL images
+* http://rachelfriends.org/
+
+##Contents
+* Various RACHEL modules have been packaged and are available to download from http://dev.worldpossible.org/mods/ We are also using other modules and we are willing to host these and other suitable educational resources.
+* http://download.kiwix.org/ http://www.kiwix.org/wiki/Main_Page and http://www.kiwix.org/wiki/Content_in_all_languages
+
+##Examples of software online
+* http://rachel64en.read-books.org/ and http://rachel.worldpossible.org/
+* http://shamba.worldpossible.org/ the version for farmers in East Africa. An early release.
+* http://www.biblioteca.worldpossible.org/guatemala/ for Guatemala
+* http://rachel64es.read-books.org/
+
