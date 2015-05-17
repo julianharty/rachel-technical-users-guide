@@ -45,3 +45,20 @@ When selecting devices it's also worth considering the contexts of use of these 
 * Availability of useful, relevant contents, formats, apps, etc.
 * Physical environment: dust, heat, sand, liquids.
 * Age of primary users:
+
+##Software needed to administer Android devices
+* adb (needed on all operating systems)
+* Windows Device Drivers
+* OSX Android File Transfer 
+
+adb (Android Debug Bridge) provides most of the functionality needed to administer, debug, update and maintain Android devices. Generally we need to instal the software tools, unless someone else has already installed them on the computer we're using. The Android device also needs to be configured to allow the adb software to interact with it. We'll cover what to do shortly in Enabling Debugging.
+
+###Enabling Debugging
+
+###Installing apps
+Using adb provides an integrated way to send and install and Android APK. Otherwise Android generally allows apks to be installed locally providing various conditions are met.
+* using email
+* using a web page
+* using file transfer & opening the apk file on the device
+###Uninstalling apps
+Apps can be uninstalled from the Settings application. They can also be deinstalled from another computer by using adb and the root Java package name e.g. adb uninstall org.kiwix.kiwixmobile ;
