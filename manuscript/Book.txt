@@ -8,5 +8,5 @@ UsingLinux.txt
 ConnectingComputers.txt
 usbRACHEL.txt
 LinksReferencesAndFurtherReading.txt
-Paraphenalia.txt
+Paraphernalia.txt
 topics.txt
