@@ -1,0 +1,25 @@
+#Working with materials
+The power of RACHEL and related projects comes from the materials made available for people to use. 
+##Finding stuff
+
+##Writing new stuff
+
+##Collaborating vs. Single author
+
+##Enhancing public materials
+
+##Preparing and packaging your work
+
+##Shrinking the downloads
+
+##Intellectual Property
+* Intellectual Property laws
+* Creative Commons Licensing
+
+##Publishing
+
+###Locally
+
+###Online
+
+###To upstream projects including RACHEL

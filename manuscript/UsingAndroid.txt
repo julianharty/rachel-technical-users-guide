@@ -5,6 +5,7 @@ There are new versions of Android several times a year. Sometimes the changes in
 
 ##RACHEL and Android
 Android devices can be used in at least 3 ways for RACHEL (and related software).
+
 1 As a Web browser to view and interact with the various web-based materials available from a RACHEL server.
 2 To run a basic version of RACHEL on the Android device. This can be shared over Wi-Fi with others.
 3 To run some of the software so people can use it directly on the Android device. Examples include Kiwix (the Wikipedia offline reader) and ka-lite (mathematics exercises).
@@ -18,6 +19,7 @@ Security settings are changed in the inbuilt Settings app. The details vary by d
 There are lots of variations in various Android tablets available globally, and even in particular countries there may be 10's or 100's of different models available at a wide range of prices. Here are suggestions and recommendations on how to choose suitable devices. 
 
 Firstly here are some selection criteria:
+
 * Durability<=>Fragility: durable devices will tend to last a long time in good working condition. Fragile devices may fail pysically e.g. the screen may be smashed and stop working, or internally where the device may fail to boot or run. Good quality covers and screen protectors can help protect the device and increase the useful life of the device.
 * Available Storage: RACHEL, Kiwix, and ka-lite include large volumes of materials. Some tablets have very limited storage available e.g. 1GB, which would limit it to smaller Wikipedia databases. Others may have as much as 50GB available, enough for a full installation of RACHEL (currently roughly 30GB) and other materials. Many devices include a micro SD-card slot which means the storage can be expanded using suitable[1] micro SD-cards. Many devices claim they support a maximum of 32GB micro-SD cards, for a full RACHEL installation 64GB is more practical.
 * Screen Quality and Resolution: Higher-end tablets tend to have far more legible screens that are also easier to read in various lighting conditions. 
@@ -39,6 +41,7 @@ Firstly here are some selection criteria:
 
 ###Context
 When selecting devices it's also worth considering the contexts of use of these devices.
+
 * Availability of usable electricity.
 * Quality and availability of Internet access.
 * Sharing the devices, per-user accounts, etc.
@@ -47,6 +50,7 @@ When selecting devices it's also worth considering the contexts of use of these 
 * Age of primary users:
 
 ##Software needed to administer Android devices
+
 * adb (needed on all operating systems)
 * Windows Device Drivers
 * OSX Android File Transfer 
@@ -57,6 +61,7 @@ adb (Android Debug Bridge) provides most of the functionality needed to administ
 
 ###Installing apps
 Using adb provides an integrated way to send and install and Android APK. Otherwise Android generally allows apks to be installed locally providing various conditions are met.
+
 * using email
 * using a web page
 * using file transfer & opening the apk file on the device
@@ -67,6 +72,7 @@ Apps can be uninstalled from the Settings application. They can also be deinstal
 Many devices, including those with Google Apps, require a valid account configuring on the device. Some e.g. Nooks need their account as part of the initial configuration - the device cannot be used until it has a valid account that's been verified by their servers on the Internet. Of course, this means we need a working Internet connection as well as whatever details the account-provider demands. For some countries in Africa setting up an account may be challenging, especially if they want a UK or USA address and credit card details for that account holder.
 
 ###Examples of various accounts
+
 * Google:
 * HTC:
 * Nook: 

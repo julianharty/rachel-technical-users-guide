@@ -1,4 +1,5 @@
 #Powering your equipment
+
 ##Introduction
 Computers need reliable, power to be available for as long as we want the computer to operate. Some computers store power, typically in a battery, so the computer can continue working for a period when external power is not available.
 
@@ -47,6 +48,7 @@ Low cost power meters are available for USB. We can use these meters to measure 
  
 ##Power engineering
 TBC here are the main topics I would like to include
+
 * Duty cycles
 * Power consumption
 * Efficiency

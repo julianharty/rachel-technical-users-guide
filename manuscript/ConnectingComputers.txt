@@ -7,6 +7,7 @@ There are two established ways to connect computers. These are using radio waves
 Ethernet uses physical cables which connect devices to either a network switch or a network hub. We will cover these in the next section.
 
 Wi-fi networks use one of the 802.11 standards. Again, we seldom need to worry about the details. We mention these standards in case you ever need to troubleshoot connection problems.
+
 ###Wi-Fis, switches and hubs
 One thig is common to all networks, they need some at least one physical device to make the connection to other devices, even when the connection is over Wi-Fi or a mobile network.
 
@@ -16,6 +17,7 @@ In some locations there may already be a device configured to provide the Wi-Fi 
 
 ##Finding each other
 Each computer and device on a network will need a known IP address in order to communicate with each other and with computers beyond the local network. Sometimes we may end up using an IP address directly, for instance in the web browser of an Android tablet to connect to the RACHEL server. 
+
 ### IP addresses
 There are two main standards for IP network addresses, the older ubiquitous IPv4 addresses, such as 192.168.1.102 and the newer IPv6 addresses. We will only cover the IPv4 addresses here as they're the primary format used by the various computers and other devices we use. 
 
@@ -35,12 +37,15 @@ The addresses are loaned by a service called DHCP. In some cases, such as when t
 Conceptually there are local addresses and foreign ones, somewhere else on another network. Generally we want our computers to share a common, single logical local network. This means that most of the IP address will be the same, this is always the first part of the address, reading from the left. For instance they may all begin with 192.168.1 where only the final part is unique.
 
 If there is an existing computer network available we may want to configure our devices to share that network. To do so we would need to know various parameters such as the name of the Wi-Fi network, any password, etc. For devices where we want to assign a fixed IP address we will also need to know what IP address to use, and other details such as the subnet, the default gateway and the DNS server. We will cover each of these later in this chapter.
+
 ### Subnets
 The subnet is a filter that matches the common part of the addresses, at least for the purposes of this book and our projects. The popular term is the subnet mask, which can be represented in several forms. These include the .dot notation e.g. 192.168.1.x and /24 which represents the number of bits in the network address that remain constant for each address in this network. 
+
 ### Default Gateways
 Computers address each other directly when they share a network. To reach computers in other networks they forward all their requests to a network address known as the 'default gateway'. This may be a device such as a router, or another computer such as a Raspberry Pi. That device is responsible for trying to find a route to connect the computer making the request to the relevant remote device, often another computer such as a web server.
 
 By convention, default gateways often have an IP address that either ends in .1 or .254 Computers need to be told what the address of the defult gateway is. They get this information with their IP address.
+
 ### Names, URLs and IP addresses
 Humans generally prefer to use names than numbers to address things. However, computers including their web browsers actually use the IP address as a number. They need to obtain the correct IP address for whatever name is being used. There are several ways to do so, the most common are either using a DNS Server or a small text file locally on that device. When we use a mobile network or an existing Wi-Fi network they often 'know' where to find the DNS Server which then performs the mapping between the name and the IP address that matches that name. 
 

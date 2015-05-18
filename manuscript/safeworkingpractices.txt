@@ -1,6 +1,7 @@
 # Safe Working Practices
+
 * protect your equipment against viruses
-** write protect tabs, read-only storage e.g. CD-ROMs, DVDs.
-** use trustworthy anti-virus scanners, relat-time protection, etc.
+  * write protect tabs, read-only storage e.g. CD-ROMs, DVDs.
+  * use trustworthy anti-virus scanners, real-time protection, etc.
 * protect your equipment against adverse physical conditions (dust, water, salt, heat, etc)
 

@@ -13,6 +13,7 @@ Today's 1-day workshop will help you to learn how to use free, open software and
 RACHEL is a project originally created not in the technology hotspots of Silicon Valley, London, or the First World; instead it started in Central America where volunteers wanted to help improve education in their schools, even when there was little money to pay for materials, books, or even teachers. The project expanded from Spanish to English and several other languages. As we were able to collect and collate more materials specific versions became possible, for farmers, for medicine, etc. and in Kenya, for instance, demand for installation exceeds the ability of the small World Possible team. 
 
 RACHEL comprises several free software applications and lots of content that's free to use and free to distribute. Technically there are several technical flavours, these include:
+
 * RACHEL for Windows computers (RACHEL-on-a-stick)
 * RACHEL for Android
 * RACHEL for Linux computers, including Raspberry Pi's, Ubuntu, and other Debian-based systems.
@@ -21,6 +22,7 @@ The project continues to improve and evolve. Currently releases are packaged as 
 
 ### Blocks of software
 <<insert figure of block diagram here>>    
+
 * explain the main block diagrams;
 * perhaps explain why we have various servers, etc. and the opportunities to improve performance, reduce complexity, etc.
 

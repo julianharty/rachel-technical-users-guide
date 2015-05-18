@@ -9,4 +9,5 @@ ConnectingComputers.txt
 usbRACHEL.txt
 LinksReferencesAndFurtherReading.txt
 Paraphernalia.txt
+WorkingWithMaterials.txt
 topics.txt

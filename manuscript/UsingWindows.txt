@@ -4,6 +4,7 @@ Microsoft Windows, collectively is the most common operating system used on lapt
 We're only going to cover various topics we consider essential, and there's too much to say to cover the topics comprehensively here. Please be willing to investigate and explore other sources of information.
 
 ##Topics to cover
+
 * Viruses: how to detect, remove and prevent viruses on Windows computers
 * Administrator Access
 * Terminal Emulator (putty)
@@ -20,16 +21,20 @@ Microsoft wants and needs to earn money to survive and thrive as a company. It l
 
 We advise you to only use genuine licensed copies of Microsoft Windows if you want to use Windows on oyur computer. That way you can take advantage of the latest security updates and other improvements. And for Windows 7 and later, Microsoft provide good quality free anti-virus software: Microsoft Security Essentials. 
 ###Administrator Access
+
 * Run As Administrator right-click menu
 
 ###Terminal Emulators
+
 * Putty: Free, basic useful software that enables a terminal window for remote, connected devices. 
 * Cygwin: A comprehensive environment that provides an Unix/Linux-like working terminal including many of the utilities and commands administrators find useful.
 
 ###Networking
+
 * ipconfig: a terminal command used to know the current IP address, and to request a DHCP address if the computer doesn't obtain one automatically.
 * ping: tests connections to computers. Those computers need to accept and respond to ping requests, some are configured to ignore them for security reasons.
 * Contol Panel, Network settings: a GUI to configure the various IP network parameters.  
+
 ##Pitfalls
 - Commands refuse to execute e.g. Win32DiskImager.exe
 

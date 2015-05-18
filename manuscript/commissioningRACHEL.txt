@@ -4,7 +4,7 @@ One way to get RACHEL running on a server is to simply follow the intructions to
 ## Commissioning using image files created by World Possible
 The project team provide documentation online on Google Docs on how to download, install and run RACHEL as a server on Windows computers, details are available at https://docs.google.com/document/d/1pfuhaV040BhN14uQ511sjmpLqsUzJ6Vy9BIH3KBh7PM/edit
 
-### Configuring an exisitng RACHEL server
+### Configuring an existing RACHEL server
 * network
 * server name
 * content packages
