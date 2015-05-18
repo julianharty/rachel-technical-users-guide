@@ -1,18 +1,28 @@
 #Powering your equipment
 
-##Introduction
-Computers need reliable, power to be available for as long as we want the computer to operate. Some computers store power, typically in a battery, so the computer can continue working for a period when external power is not available.
+Computers need reliable power.  Reliable power is especially important for the computers used to host RACHEL because these computers need to supply and collect information from many users at the same time.  If the power fails, or just dips or spikes while information is being collected and before it is safely saved, the information being collected can be corrupted losing that information and even making it difficult or impossible to restart RACHEL or reload the database with the information when the power is good.
 
-Sometimes power is available but poor quality that could potentially cause damage to the contents of the computer or even the computer itself. It's possible to filter, or condition, the power so the quality is improved. 
+All computers, especially computers that do not have internal batteries can have their files corrupted by bad power.  File corruption caused by bad power are more common a RACHEL Server is collecting information such as the answers supplied by students for question is some of the teaching material such a the Khan Academy math lessons in KA-Lite.
 
-We can add an external battery to most computers to enable them to have a reservoir of power. Often the external battery is combined with power conditioning which can help increase the reliability of the computer. 
+Bad power or power failure can cause problems even with the parts of RACHEL that only supply information and to do not collect or change the information on the hard drive or SD Card. Even computers that are used by just one person at a time can have their files corrupted by bad power.  The reason for this is that most computer operating systems open files while they are working and need to close these files when they stop working and erase small files were made only for temporary use.  See these sections on shutting down RACHEL for examples of what is required before disconnecting the power from a computer acting as a RACHEL server.
+
+Some computers, especially laptop computer, tablets, and smartphones, have their own battery to supply power when they are disconnected from external power supplies. This internal battery power makes laptops and tablets good for traveling and for areas with unreliable power.  Laptops and powerful tablets can be a good computer for a RACHEL server in areas with unreliable power because they can be programmed shut down properly when the battery is about to run out of power.
+
+In the spring of 2015 World Possible started selling a RACHEL Pi server with a built-in battery and a control board for areas with unreliable power: The RACHEL Pi 2 Remote Deployment Pack.  See the World Possible Store at: http://world-possible.myshopify.com/
+There is only a small battery in the RACHEL Pi 2 Remote Deployment Pack.  This small battery can only supply enough power for about 10 minutes of operation.  The system then shuts down automatically in a careful process that takes about 3 minutes.  Therefore, this server should have an external source of power that only has only a few outages that are longer than 10 minutes.  If power outages are going to be longer than 10 minutes and large car battery or solar battery charged with solar panels or wtih AC power from the electric company or a generator should be added, not to protect the server, but to provide reliable service to users.  Of course, if all of the users are dependent upon AC power from the electric company or the power company to run their computers, then there is not benefit of have a large battery for the server.  However, many users now often use laptops or tablets so having a server with a reliable power source will enable them to keep working.
+
+With poor quality that could potentially cause damage to the contents of the computer or even the computer itself it is possible to filter, or condition, the power so the quality is improved. This conditioning is especially good for protecting the computer hardware and also for protecting the software from short dips or surges.
+
+An external battery can be added to most computers to enable them to have a reservoir of power to protect both the software and the hardware.  To be sure to protect the software the computer needs to be shutdown before the power in this reservoir is used up.  If the power to a computer dies or is turned off before it is shutdown, most of the times the problems with the files will be so small, the computer will start without any visible problems when it is turned on.  However, just because this appears to be OK, the problems when they occur can be very difficult to correct, especially if back up copies of the software for the operating system are not available.
+
+Often the external battery is combined with power conditioning which can help increase the reliability of the computer.  
 
 When the computer consumes power, that power leaves the battery. Eventually the battery will run out of power. When the battery runs out of power it can no longer power the computer. If nothing else happens the computer will stop, sometimes abruptly. It's wise and prudent to shutdown a computer before all the power has been used up. Some computers are programmed to do this automatically, others may need us to tell them to shutdown by using commands. Commands are covered in another chapter of this book.
 
 Some batteries can be recharged while they are providing power, others are limited to either being charged or providing power. Generally we prefer using batteries that can be recharged while being used, otherwise our computer will not be available when the battery is being charged. 
 
 ###Power for low cost computers and Android Tablets
-Most of our projects use computers powered using USB connections. USB power is 5 volts DC. Therefore much of our work and equipment focuses on USB power. This inclues the solar panels, batteries, and power adapters/chargers. 
+Most of our projects use computers powered using USB connections. USB power is 5 volts DC. Therefore much of our work and equipment focuses on USB power. This includes the solar panels, batteries, and power adapters/chargers. 
 
 ###USB power
 USB was originally designed to enable computers to interact with peripheral devices, including keyboards, mice, network adapters, and storage. Many of these devices needed power to be provided, so the USB standard allowed these devices to use up to 500 milli-Amps (mA) of power at 5 volts, a total of 2.5 watts (watts are a common measure of power). 
