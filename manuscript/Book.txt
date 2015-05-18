@@ -10,4 +10,5 @@ usbRACHEL.txt
 LinksReferencesAndFurtherReading.txt
 Paraphernalia.txt
 WorkingWithMaterials.txt
+WorkingWithSoftwareDevelopment.txt
 topics.txt

@@ -1,6 +1,22 @@
 #Working with materials
 The power of RACHEL and related projects comes from the materials made available for people to use. 
+
+## Some practical context (a personal perspective)
+In the last few years and during my travels I've come to the conclusion that the packaging and distribution of materials is one of the biggest challenges for RACHEL and similar projects that aim to provide contents to the vast majority of people and locations that don't have reliable, high speed Internet access. 
+
+Here are my heuristics I'm working towards:
+ 
+1. the maximum chunk should be designed to fit on a USB stick one could buy at any tourist resort or medium sized city globally e.g. climbing the Andes, at a beach resort in India, in a shopping mall in Nairobi, etc. That's somewhere either 8GB or 16GB currently based on my admittedly very limited research (I check wherever I go in the world). I also consider ways to reduce the chunk size to one that'd fit (and be useful[1]) on a DVD-ROM and even a CD-ROM. The aim is to be able to deliver whatever we want on one or more practical, available pieces of hardware (and by that I include USB sticks, etc).
+2. Modularity helps reduce the update size dramatically. Until recently folk had to redownload the entire image if they want the latest updates. dev.worldpossible.org/mods now allows people to download individual modules (using rsync, which is available in cygwin for Windows users). I'd like to get even more modular.
+3. Compression also helps. Emmanuel of Kiwix is helping me with our PhET experiment to see if we can script the packaging of PhET. The principles and the commands we end up using may be generally applicable for rich HTML5 apps.
+
+Money to pay good developers / devops / system administrator people may help us make better progress. Also, the industry is solving these problems for commercial apps, content delivery, etc. so let's investigate the practices that seem to work and try to apply them as a starting point.
+
+[1] having smaller usable chunks of content and software can also help people who simply don't have the luxury of a device with 32GB available e.g. where a useful subset of RACHEL contents are being deployed by a project in Kenya who only had a few GB available; and I have various cheap Android tablets with roughly either 3GB or 6GB available from new (depending on whether they were equipped with 4GB or 8GB storage). Kiwix and zim files are one approach to package and distribute much of the materials.
+
 ##Finding stuff
+
+###Permission to use existing stuff
 
 ##Writing new stuff
 
@@ -10,9 +26,10 @@ The power of RACHEL and related projects comes from the materials made available
 
 ##Preparing and packaging your work
 
-##Shrinking the downloads
+##Shrinking the materials
 
 ##Intellectual Property
+
 * Intellectual Property laws
 * Creative Commons Licensing
 
