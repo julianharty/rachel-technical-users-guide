@@ -2,6 +2,11 @@
 Installing RACHEL once is enough for many people, and can take many hours from start to finish. However, when we want to install RACHEL on more computers, the challenge of scaling and working efficiently become more important.
 
 ##Variations in performance
+Many factors can affect performance. Ultimately we want to work efficiently and effectively and for users to be able to use the system productively without material delays or glitches. Factors include:
+
+* Usage patterns
+* Hardware used
+* Software drivers and configuration settings 
 
 ###Of USB Drives
 The performance of file copies vary massively. The model of USB storage can affect the performance several fold, as can the type of USB interface on the computer (and its performance). As a guideline USB 3.0 drives when used with USB 3.0 USB port will give the best throughput.
@@ -29,7 +34,27 @@ sys	8m58.815s
 Kingston 64GB drive
 
 ~~~~~~~~
-
+real	99m2.430s
+user	14m15.597s
+sys	9m21.392s
 ~~~~~~~~
 
+Even in the first test comparison there's a 2:1 ratio between the drives, in the same USB slot. Now imagine trying to prepare 10, 50 or even 1,000 USB drives to ship to projects!
 
+###Of Raspberry Pi models
+
+* B+ Model 2: is the current performance winner in terms of capacity and throughput.
+* B in terms of storage capacity as SD-Cards are available with approximately 2x the capacity than micro SD-Cards currently. (This situation will probably reverse within 12 months)
+* A+ in terms of power usage and overall dimensions.
+
+##Testing and measuring performance
+A big, rich topic. TBC.
+
+* HTTP and Browser-based automated testing
+* Performance measurement utilities e.g. `top`
+* `time`
+
+Remember to make notes (there are several examples in this chapter and elsewhere in the book where we use `time` and learned more about the performance of aspects of the system.
+
+###Performance Analysis
+Another TBC topic. However we can analyse log files to infer performance data amongst other techniques.
