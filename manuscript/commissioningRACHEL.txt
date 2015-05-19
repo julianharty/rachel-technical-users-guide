@@ -2,11 +2,14 @@
 One way to get RACHEL running on a server is to simply follow the intructions to use one of the existing image files, write that image to a memory card, and boot a Raspberry Pi using that image. This may be enough for some of us. However, that RACHEL server will be a clone of one created by developers the World Possible project team, and unlikely to be ideal for our environment and context. For instance the network settings might clash with other networks in your environment; the image may be too large, etc. We can customise RACHEL servers during and after commissioning the server.
 
 ## Commissioning using image files created by World Possible
-The project team provide documentation online on Google Docs on how to download, install and run RACHEL as a server on Windows computers, details are available at https://docs.google.com/document/d/1pfuhaV040BhN14uQ511sjmpLqsUzJ6Vy9BIH3KBh7PM/edit
+The project team provide documentation online on Google Docs on how to download, install and run RACHEL as a server on Windows computers, details are available at [RACHEL-Pi Download Guide](https://docs.google.com/document/d/1pfuhaV040BhN14uQ511sjmpLqsUzJ6Vy9BIH3KBh7PM/edit)
 
 On Microsoft Windows, there's an excellent simple utility called Win32DiskImager which is available from http://sourceforge.net/projects/win32diskimager/files/latest/download Details of how to use this command are in the above online document. 
 
-On Linux we use the `dd` command to write the downloaded image to a memory card. Here's an example where I'm using the `time` command to measure the duration of the write.
+On Linux we use the `dd` command to write the downloaded image to a memory card. 
+A very clear guide is available online [Installing Operating System Images on Linux](https://www.raspberrypi.org/documentation/installation/installing-images/linux.md)
+
+Here's an example of writing the image where I'm using the `time` command to measure the duration of the write.
 
 `sudo dd bs=1024k if=rachelpi_64EN_3.2.1.img of=/dev/mmcblk0`
 
@@ -15,13 +18,15 @@ You probably need to revise the command line to match:
 * the input file (the `if=` parameter).
 * the output 'file' (the `of=` parameter) for where your computer has mapped the physical SD-card in it's list of devices.
 
-You may also need to stop your computer from using the SD-card by un mounting it, using the `umount` command in Linux. For OSX there are `diskutil` commands. For now, please search online for instructions on how to write Raspberry Pi images when using OSX.
+You may also need to stop your computer from using the SD-card by un mounting it, using the `umount` command in Linux. 
+
+For OSX there are `diskutil` commands. For now, please search online for instructions on how to write Raspberry Pi images when using OSX.
   
 ### Configuring an existing RACHEL server
 TBC for now please see the following links (from ka-lite) which cover many of the same topics
 
-* https://github.com/learningequality/ka-lite/wiki/Benchmarks:-Raspberry-Pi
-* https://learningequality.org/docs/installguide/install_rasp_pi.html
+* <https://github.com/learningequality/ka-lite/wiki/Benchmarks:-Raspberry-Pi>
+* <https://learningequality.org/docs/installguide/install_rasp_pi.html>
 
 Here are the topics I want to cover in this chapter
 
