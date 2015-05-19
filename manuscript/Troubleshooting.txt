@@ -1,0 +1,7 @@
+#Troubleshooting
+Software can help us troubleshoot configuration problems, and runtime errors. We can also investigate logs to understand more of how the software is behaving. 
+
+Each operating system has particular tools, here's a brief table for comparison.
+
+|Utility|Android|Linux|Windows|
+

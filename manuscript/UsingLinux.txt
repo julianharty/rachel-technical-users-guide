@@ -49,7 +49,7 @@ We will rely on the various 'apt' commands, particularly apt-get.
 
 The double ampersands (&&) tell Linux to only do the command on the right if the command on the left completes successfully.
 
-For more info, here's the official article on updating and upgrading Raspbian https://www.raspberrypi.org/documentation/raspbian/updating.md
+For more info, here's the official article on updating and upgrading Raspbian <https://www.raspberrypi.org/documentation/raspbian/updating.md>
 
 ###Installing software
 There are a trio of useful commands, one you probably need to install so we'll cover it last.
@@ -68,6 +68,7 @@ To list the partitions, usage and format use:
 `df -Th`
 
 Here's an example from my laptop
+
 ∼∼∼∼∼∼∼∼
 julian@julian-ThinkPad-X220:~/Downloads/rachel$ df -Th
 Filesystem     Type      Size  Used Avail Use% Mounted on
@@ -82,6 +83,7 @@ none           tmpfs     100M   80K  100M   1% /run/user
 ∼∼∼∼∼∼∼∼
 
 We can list files with the `ls` command. Here's an example for my RACHEL image files:
+
 ~~~~~~~~
 ls -l
 total 82094540
@@ -90,6 +92,13 @@ total 82094540
 ~~~~~~~~
 
 The `-l` option asks `ls` to list in 'long' format, providing more details including the file permissions (who can do what with the files) and the size. These files total about 80GB.
+
+There are several similar commands in Linux, similar in concept to `ls` which provide information about various aspects of the computer. These include:
+
+* `lsusb`: to list the devices connected to USB ports.
+* `lsmod`: to list various software modules loaded into memory.
+
+Again, use `man` followed by the command to learn more about what it does and the various command line options they support.
 
 ###Working with files
 The most common command is simply `cp` to copy files from one place to another. We need to specify both the source files and the destination. `*` means all the files. 
@@ -106,6 +115,6 @@ sys	1m30.292s
 
 ###Formatting filesystems
 
-Here is a useful article that enabled me to reformat a FAT32 partition as exFAT so I could use it to store the large RACHEL image files https://newtocode.wordpress.com/2014/02/12/format-usb-as-exfat-in-ubuntu-13-10-terminal/
+Here is a useful article that enabled me to reformat a FAT32 partition as exFAT so I could use it to store the large RACHEL image files [Formatting USB as exFAT in Ubuntu 13.10](https://newtocode.wordpress.com/2014/02/12/format-usb-as-exfat-in-ubuntu-13-10-terminal/)
 
 

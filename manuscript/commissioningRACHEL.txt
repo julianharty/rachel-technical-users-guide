@@ -11,12 +11,22 @@ A very clear guide is available online [Installing Operating System Images on Li
 
 Here's an example of writing the image where I'm using the `time` command to measure the duration of the write.
 
-`sudo dd bs=1024k if=rachelpi_64EN_3.2.1.img of=/dev/mmcblk0`
+`time sudo dd bs=1024k if=rachelpi_64EN_3.2.1.img of=/dev/mmcblk0`
 
 You probably need to revise the command line to match:
 
 * the input file (the `if=` parameter).
 * the output 'file' (the `of=` parameter) for where your computer has mapped the physical SD-card in it's list of devices.
+
+The write took 86 minutes! 
+
+~~~~~~~~
+real	85m33.743s
+user	0m0.383s
+sys	2m2.943s
+
+62864228352 bytes (63 GB) copied, 5133.74 s, 12.2 MB/s
+~~~~~~~~
 
 You may also need to stop your computer from using the SD-card by un mounting it, using the `umount` command in Linux. 
 

@@ -6,6 +6,7 @@ UsingAndroid.txt
 UsingWindows.txt
 UsingLinux.txt
 ConnectingComputers.txt
+Troubleshooting.txt
 usbRACHEL.txt
 RachelOnAndroid.txt
 LinksReferencesAndFurtherReading.txt

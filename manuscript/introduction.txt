@@ -21,7 +21,7 @@ RACHEL comprises several free software applications and lots of content that's f
 The project continues to improve and evolve. Currently releases are packaged as single massive 'image' files. The main distributions are packaged for USB memory, typically on a USB memory stick, or on an sd-card for either Android or Raspberry Pi computers. Technical users can tweak these distributions so they can work on Android devices, other operating systems, etc.
 
 ### Blocks of software
-<<insert figure of block diagram here>>    
+![Blocks of Software in RACHEL](images/BlockDiagram.png)
 
 * explain the main block diagrams;
 * perhaps explain why we have various servers, etc. and the opportunities to improve performance, reduce complexity, etc.
