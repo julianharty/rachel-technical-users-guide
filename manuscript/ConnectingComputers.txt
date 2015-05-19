@@ -1,6 +1,21 @@
 #Connecting Computers
 Computers only need a network if they want to connect to other computers, including the Internet and computers in a local area network (LAN). There are various aspects to the connection, including how the signals go from one computer to another, and how computers can find each other once they are part of a working network. We will cover the various aspects in this chapter so that we can connect computers together in a working network.
 
+This chapter covers the applications we're likely to use, and an overview of the core concepts of TCP/IP networking. We'll start with the commands as these are succinct.
+
+##Commands to connect to computers and Android devices
+
+###Connecting to computers
+The ubiquitous command (and protocol) to connect to another computer over a TCP/IP connection is `ssh`. `ssh` is available for each of the operating systems and platforms we use.
+
+* Linux: `ssh` is preinstalled.
+* OSX (Mac computers): `ssh` is preinstalled
+* Windows: Either use `putty` or install `cygwin and then configure it to include `ssh` if it's not included in your setup.
+* Android: `ConnectBot` is a reasonable Android app that provides basic `ssh` capabilities. There may be better alternatives.
+
+###Connecting to Android devices
+The core command is `adb` provided in the Android SDK. For Ubuntu this is also available as a Debian package. `sudo apt-get install android-tools-adb` to install this package.
+
 ##Signals and Cables
 There are two established ways to connect computers. These are using radio waves and physical cables. Physical networks are almost always using technology called Ethernet. Radio waves vary in frequency, tere are several 'bands' of frequencies used for Wi-Fi networks, and others for mobile phone networks such as 3G, CDMA, and 4G (also known as Wi-Max). We seldom need to be concerned with the details unless there are conflicts between several Wi-Fi networks.
 
@@ -32,6 +47,15 @@ Most other devices request an IP address when they start using a network. They a
 If our assumptions when configuring the loan period are incorrect some devices may not be able to connect to the network.
 
 The addresses are loaned by a service called DHCP. In some cases, such as when the RACHEL server provides the Wi-Fi network, these addresses need to be configured on that server (the preconfigured RACHEL servers are already configured to do so). Wi-Fi routers generally have a web-based administrator's interface where the set of addresses are configured. 
+
+####Common IP addresses for RACHEL Servers
+There are at least 3 IP addresses which the project has used in RACHEL Pi builds. These include:
+
+* 1.1.1.1
+* 10.10.10.10
+* 192.168.1.10
+
+If you're computer or device is connected to the Wi-Fi provided by RACHEL Pi you can use your IP address to determine (or guess) the IP address of the RACHEL Server. You may be able to check your IP address in the GUI, or on Windows, OSX and Linux, from the command line using either `ipconfig /all` (on Windows) or `ifconfig` on other operating systems.
 
 ### Local and foreign networks
 Conceptually there are local addresses and foreign ones, somewhere else on another network. Generally we want our computers to share a common, single logical local network. This means that most of the IP address will be the same, this is always the first part of the address, reading from the left. For instance they may all begin with 192.168.1 where only the final part is unique.
