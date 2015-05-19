@@ -1,0 +1,4 @@
+#RACHEL on Android
+Downloading, installing, and adding contents are all currently documented online http://dev.worldpossible.org/wiki/index.php/Installing_RACHEL_on_Andoid_Tablet_or_Android_MiniPC
+
+TBC migrate the instructions here? 
