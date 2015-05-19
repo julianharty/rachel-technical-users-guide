@@ -1,14 +1,111 @@
 #Linux
+Linux is installed on billions of computers, including Android, laptops, Raspberry Pi's and large servers hosting much of the Internet. It has a long pedigree and has proven to be extremely flexible, adaptable and capable. However many end users have gotten used to Microsoft Windows and Microsoft Office and for many people their first impression is that Linux seems scary, hard work, and unforgiving. RACHEL is available for Windows and for Android and you don't need to know Linux for either of these distributions of RACHEL. However, RACHEL is more capable when used on Linux, and for technical users, once they learn how to work with Linux they discover they can do much more than they'd otherwise be able to do using Windows.
+ 
+##Why do we find Linux useful
+Working in Linux is very consistent once we've learned how to do so. It has tremendous flexibility and is well suited to running web servers, etc. as we use for RACHEL. Much of the software is opensource and therefore offers greater opprtunities to modify and enhance it so we can customise the software to suit our needs.
 
-* What is linux
-* Why do we find it useful
-* How to obtain linux and prepare to install it
-* Installation options: USB drive / CD-ROM, VirtualBox, Dual-boot, Vagrant, etc.
-* Useful sizes of partitions for working with RACHEL
-* Security and other updates
-* Common development tools and commands (vim, compilers, apt-get, apt-file, aptitude, sudo)
+##How to obtain Linux and prepare to install it
+For the purpose of RACHEL we use two distributions of Linux: 
 
-##Common flavours of Linux
-* Raspbian
-* Ubuntu (LTS)
+* Raspbian: on the Raspberry Pi. Available from www.raspberrypi.org
+* Ubuntu (LTS): LTS indicates this version of Linux will be supported for a long time, several years. This means we can install and use it knowing it will still be supported for the duration of most or our projects.(and it can be upgraded on an annual basis to the next release of Ubuntu LTS so we can keep going indefinitely). Downloads are availale from www.ubuntu.com/downloads
+
+##Installation options
+There are lots of choices for where and how we can install Linux. For desktop versions (Ubuntu in our case) these include: USB drive / CD-ROM, VirtualBox, Dual-boot, Vagrant, etc. For Raspberry Pi's we create the image using software utilities where the software is written to a SD-card.
+
+TBC
+
+##Useful sizes of partitions for working with RACHEL
+RACHEL images currently take up lots of space, around 64GB for the larger Raspberry Pi image, and 30GB for the USB image. This means we'd be wise to have a working partition of at least 2x the size of these two combined files so we can download an updated version without running out of space, etc. Often it's worth also having a large capacity external drive (also known as a 'HDD' - which is short for Hard Disk Drive) with at least 500GB available to backup images, and enable the USB RACHEL image to be unzipped.
+
+So, we recommend a partition where you have 200GB available to work with RACHEL images. This holds whether you're using Windows or Linux on your computer.  
+
+##Security and other updates
+All software becomes obscelete eventually. The software may also have security vulnerabilities that others discover how to exploit. Thankfully, many projects provide updates to their software which are freely available to use. We simply need to install them. For some apps e.g. ka-lite we may need to run commands to backup, and update databases. We cover how to update Linux software later in this chapter. Updating apps (including ka-lite) is a separate topic TBC. 
+
+##Common development tools and commands
+
+* Text editors: nano is probably the simplest for newcomers. vim or emacs more capable and more likely to be used by longer term users of Linux.  
+* compilers: These include compilers for C++ and Java. We won't cover them in this chapter - TBC in updates to this book.
+* apt-get, apt-file, apt-cache and aptitude: are all related to managing software on Linux systems. They're originally part of a Linux operating system called Debian, therefore the tools all work with 'Debian' packages (that contain the various software and files that comprise the package).
+* sudo: enables us to run commands that need what's known as super-user privileges, where we're administering the computer and the software that's installed.
+
+##Useful commands
+When working with Linux systems for RACHEL much of our time will be spent either working with files, for instance downloading and unpacking RACHEL images, or configuring RACHEL running on Linux where we're deailing with network and web server configs. We may also want and need to connect to remote computers over a network. In addition, we'll need to install new software and keep our system up-to-date. For the more intrepid we'll be working with development tools such as git, building code, etc.
+
+All my examples use the terminal (command-line) interface. Sometimes there are GUI options available, however as we're likely to need to be able to work using command-lines, particularly when working remotely, we might as well learn the essentials of using commands now. 
+
+###General commands and tips
+First things first, Linux command lines generally support tab-completion, where typing the first part of a command and pressing tab will either complete the command or show possible matches if several exist. Sometimes we need to press two tabs to get a response. 
+
+`man` followed by the name of a Linux command will enable you to read the documentation about that command. For example `man ls` will enable you to read about the `ls` (list) command, including the many options.
+
+`zip` and `tar` both work with compressed files. Use `man` to learn more about how to use them :)
+
+###Keeping our system up-to-date
+We will rely on the various 'apt' commands, particularly apt-get. 
+
+`sudo apt-get update && sudo apt-get upgrade`
+
+The double ampersands (&&) tell Linux to only do the command on the right if the command on the left completes successfully.
+
+For more info, here's the official article on updating and upgrading Raspbian https://www.raspberrypi.org/documentation/raspbian/updating.md
+
+###Installing software
+There are a trio of useful commands, one you probably need to install so we'll cover it last.
+1 `apt-get install` is used to install named software packages. You need to get the name exactly correct, including the case. For example `sudo apt-get install vim`. Vim or VIM wouldn't be recognised and vim would not be installed. The command needs sudo as it is a powerful command and Linux wants you to confirm you intended to run this command. Sometimes you'll be asked to confirm the installation with a Y/N prompt. Answer y (pressing enter, or return, also works). Tip, you can include `-y` in the command line to confirm you'd like Linux to install the software.
+2 `apt-cache search` is used to find packages that match a search term. This can help us to find suitable packages to install e.g. there are several choices of Java, `apt-cache search java` will list all that match, including many that you may not be interested in. The search runs against a set of sources configured on the current Linux computer. Sometimes we will want to install software from elsewhere, for instance Oracle's JDK. For now, please search online for information on how to do so (you'll need to be online anyway to be able to download and install the software).
+3 `apt-file search` `apt-file` often needs to be installed, so try using `sudo apt-get install apt-file -y` if the command isn't found. Once it's installed, run `apt-file update` so it can update its currently empty search database. `apt-file` is able to find which packages contain specific files which is very very helpful when working with building kiwix and other software.
+
+###Working with files, partitions and drives
+We can explore the drives, partitions and files using various non-destructive commands. These include: 
+* `df` to show the usage, free space and partitions.
+* `ls` to list files in a folder.
+* `tree` to show all files and the structure in this folder and all the sub folders.
+* `file` provides lots of information about a particular file.
+
+To list the partitions, usage and format use:
+`df -Th`
+
+Here's an example from my laptop
+∼∼∼∼∼∼∼∼
+julian@julian-ThinkPad-X220:~/Downloads/rachel$ df -Th
+Filesystem     Type      Size  Used Avail Use% Mounted on
+/dev/sda5      ext4      194G   92G   93G  50% /
+none           tmpfs     4.0K     0  4.0K   0% /sys/fs/cgroup
+udev           devtmpfs  3.9G  4.0K  3.9G   1% /dev
+tmpfs          tmpfs     787M  1.3M  786M   1% /run
+none           tmpfs     5.0M     0  5.0M   0% /run/lock
+none           tmpfs     3.9G  604K  3.9G   1% /run/shm
+none           tmpfs     100M   80K  100M   1% /run/user
+/dev/sdc1      vfat      932G   12G  920G   2% /media/julian/Transcend
+∼∼∼∼∼∼∼∼
+
+We can list files with the `ls` command. Here's an example for my RACHEL image files:
+~~~~~~~~
+ls -l
+total 82094540
+-rw-rw-r-- 1 julian julian 62864228352 May 18 22:59 rachelpi_64EN_3.2.1.img
+-rw-rw-r-- 1 julian julian 21200564247 May 19 04:12 rachelusb_32EN_3.1.5.zip
+~~~~~~~~
+
+The `-l` option asks `ls` to list in 'long' format, providing more details including the file permissions (who can do what with the files) and the size. These files total about 80GB.
+
+###Working with files
+The most common command is simply `cp` to copy files from one place to another. We need to specify both the source files and the destination. `*` means all the files. 
+
+Here is an example where I also used the `time` command to measure how long the copy took of two very large RACHEL image files (shown above in the `ls -l` command): 
+
+~~~~~~~~
+time cp * /media/julian/RACHEL-BACKUP/rachel/
+
+real	36m58.934s
+user	0m1.023s
+sys	1m30.292s
+~~~~~~~~
+
+###Formatting filesystems
+
+Here is a useful article that enabled me to reformat a FAT32 partition as exFAT so I could use it to store the large RACHEL image files https://newtocode.wordpress.com/2014/02/12/format-usb-as-exfat-in-ubuntu-13-10-terminal/
+
 
