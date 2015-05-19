@@ -9,7 +9,7 @@ Opensource means you have greater flexibility to work with the software, particu
 ###Opensource licenses
 In brief, you need to be aware of, and comply with the relevant opensource license used by whatever opensource software you want to use, and potentially modify or contribute to. For the current projects used by RACHEL the licenses are unlikely to cause material restrictions. 
 
-See http://opensource.org/ which has a good overview as well as lots of much more indepth materials.
+See <http://opensource.org/> which has a good overview as well as lots of much more indepth materials.
  
 ###Popular software tools and locations
 Most opensource projects now use Git as the source control tool of choice. The source code is stored in a Git Respository, and the commands used by developers generally start with 'git' together with some additional parameters.
@@ -23,7 +23,7 @@ Some projects have their own location for their source code, and some project ha
 
 ##Finding information
 
-* Stack Exchange web sites and particularly http://stackoverflow.com are excellent places to find answers to programming questions. You can also ask questions, participate, help others, etc.
+* Stack Exchange web sites and particularly <http://stackoverflow.com> are excellent places to find answers to programming questions. You can also ask questions, participate, help others, etc.
 * Development groups, mailing lists, etc. Each project typically has at least one central location for the developers to correspond. Some also use an old chat service called IRC where they 'chat' in real time. 
 * FAQ's (Frequently Asked Questions) are written by the development team to help newcomers find answers to common questions rather than 'bug' the mailing lists, etc. They are unlikely to be all you need, however people expect you'll have at least skimmed through the FAQ's as a prerequisite to expecting a response to your question. In other words, if you're asking a question where the project team believe you'd have found the answer in the FAQ don't expect them to respond. 
 * Project Wikis, aimed at developers. Generally these are more complete, or in-depth answers than on an FAQ. ka-lite has a particularly complete wiki for developers.

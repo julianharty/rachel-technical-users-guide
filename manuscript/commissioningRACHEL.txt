@@ -4,7 +4,7 @@ One way to get RACHEL running on a server is to simply follow the intructions to
 ## Commissioning using image files created by World Possible
 The project team provide documentation online on Google Docs on how to download, install and run RACHEL as a server on Windows computers, details are available at [RACHEL-Pi Download Guide](https://docs.google.com/document/d/1pfuhaV040BhN14uQ511sjmpLqsUzJ6Vy9BIH3KBh7PM/edit)
 
-On Microsoft Windows, there's an excellent simple utility called Win32DiskImager which is available from http://sourceforge.net/projects/win32diskimager/files/latest/download Details of how to use this command are in the above online document. 
+On Microsoft Windows, there's an excellent simple utility called Win32DiskImager which is available from <http://sourceforge.net/projects/win32diskimager/files/latest/download> Details of how to use this command are in the above online document. 
 
 On Linux we use the `dd` command to write the downloaded image to a memory card. 
 A very clear guide is available online [Installing Operating System Images on Linux](https://www.raspberrypi.org/documentation/installation/installing-images/linux.md)

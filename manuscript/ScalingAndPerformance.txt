@@ -1,0 +1,35 @@
+#Scaling and Performance
+Installing RACHEL once is enough for many people, and can take many hours from start to finish. However, when we want to install RACHEL on more computers, the challenge of scaling and working efficiently become more important.
+
+##Variations in performance
+
+###Of USB Drives
+The performance of file copies vary massively. The model of USB storage can affect the performance several fold, as can the type of USB interface on the computer (and its performance). As a guideline USB 3.0 drives when used with USB 3.0 USB port will give the best throughput.
+
+My current computer, an X220 i5 only has 3 USB 2.0 ports. All the USB drives support USB 3.0.
+
+`time unzip rachelusb_32EN_3.1.5.zip -d /media/julian/USB\ DISK/`
+
+Integral 32GB drive
+
+~~~~~~~~
+real	70m59.300s
+user	13m46.886s
+sys	8m21.883s
+~~~~~~~~
+
+Sandisk
+
+~~~~~~~~
+real	49m28.714s
+user	14m2.900s
+sys	8m58.815s
+~~~~~~~~
+
+Kingston 64GB drive
+
+~~~~~~~~
+
+~~~~~~~~
+
+

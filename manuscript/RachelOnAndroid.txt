@@ -1,4 +1,7 @@
 #RACHEL on Android
-Downloading, installing, and adding contents are all currently documented online http://dev.worldpossible.org/wiki/index.php/Installing_RACHEL_on_Andoid_Tablet_or_Android_MiniPC
+Downloading, installing, and adding contents are all currently documented online 
+[Installing RACHEL on an Andoid Tablet, etc](http://dev.worldpossible.org/wiki/index.php/Installing_RACHEL_on_Andoid_Tablet_or_Android_MiniPC)
 
+On Android RACHEL relies on a small web server and has a mySQL database running in the background. The embedded web server means the app is unlikely to be approved by Google's App Store. The contents need to be available on the device. They can be copied to internal storage (known as `/sdcard/` for historical Android reasons), or on removeable storage such as a micro-SD card or USB storage connected using OTG (On The Go) protocol. 
+ 
 TBC migrate the instructions here? 
