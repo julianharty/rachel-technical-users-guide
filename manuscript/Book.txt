@@ -10,6 +10,7 @@ usbRACHEL.txt
 RachelOnAndroid.txt
 LinksReferencesAndFurtherReading.txt
 Paraphernalia.txt
+WorkingWithRaspberryPis.txt
 WorkingWithMaterials.txt
 WorkingWithSoftwareDevelopment.txt
 topics.txt

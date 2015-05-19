@@ -1,0 +1,15 @@
+#Working with Raspberry Pis
+When using RACHEL on Raspberry Pi's there are several things that are useful to know. These include how to see what's happening and how to provide inputs to the Pi. Also, we may need to update the kernel of the operating system in order to use an existing image on newer models of Raspberry Pi (and there've been 3 in the last 12 months) otherwise your current RACHEL image will not boot in the newer devices.
+
+##Interacting with a Pi
+We can connect a Raspberry Pi directly, using a USB keyboard, and optionally a USB mouse. For the display we can connect directly to an HDMI display (which includes many recent flatscreen televisions), composite video (supported on older generation TVs and some small flat screens intended for use in cars, or using a special HDMI to VGA cable. We recommend using HDMI where practical as the quality is far superiour and you're unlikely to need to mess about with finding suitable cables or adapters the other options need.
+
+
+Another way to connect is over a network. Model B Pi's include an Ethernet port, and both Model A's and Model B's support USB Wi-Fi adapters. The operating system (Raspbian) is preconfigured to support the WiPi adapter which is one of the reasons we recommend and use this adapter.
+
+* Raspbian images: have `ssh` enabled by default. They will request an IP address using DHCP so can connect to an existing logical network. You will need to find out which IP address the Pi has been assigned, this will be covered in the Connecting Computers chapter.
+* RACHEL images: also have `ssh` enabled. They are configured as a DHCP server, so if we connect to a Pi running standard RACHEL builds we will be allocated an IP address for us. Using network commands we can determine the IP address of the Pi and connect using `ssh`. 
+
+##Updating the kernel files
+TBC
+
