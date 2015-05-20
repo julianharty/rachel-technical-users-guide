@@ -9,6 +9,29 @@ Android, Windows, Debian (on Raspberry Pi's)
 ## Proposed Agenda
 Today's 1-day workshop will help you to learn how to use free, open software and materials to help improve education wherever you work. We will work together for several sessions so we can learn with and from each other. We have various topics to try and cover during today, our progress will depend on you and your needs, questions, and involvement. My main role is as facilitator and coach based on my work in applying digital education in various countries, both directly and by helping other people. I hope we will manage to establish strong working relationships today and during this elearning-africa conference. 
 
+###What is RACHEL?
+
+RACHEL (Remote Areas Community Hotspots for Education and Learning) is a World Possible initiative to leverage the large volume of open and free educational courseware and libraries available online and make them available to Emerging Countries schools and communities with no Internet access or very limited bandwidth. The RACHEL Initiative has made possible that offline educational servers could be deployed by World Possible and large number of NGOs all around the world.
+
+Why would people need a "RACHEL-Pi" (RACHEL Server on a Pi)?
+
+* A large amount of rich educational content and open courseware is available online, in thousands of web sites, and are available for free to anyone, anywhere; as long as you have an active Internet connection.
+* Unfortunately in the world there are still large number of regions and communities with no Internet access at all, or in many other cases if they have Internet connectivity the available bandwidth is unusable for most practical purposes, much less to watch videos or rich media lectures or textbooks.
+* Or Internet connectivity is too expensive.
+* Or a school or community has good Internet connectivity but for some reason access to many web sites is blocked, like YouTube, where video lectures of multiple colleges and organizations are hosted.
+* This Raspberry Pi hardware and this RACHEL-Pi server distribution provides a very affordable, very compact, low-power server platform, which is very convenient to transport, ship, setup and maintain on on-the-ground deployments.
+
+What type of content is on a "RACHEL-Pi" distribution?
+
+* An offline self-contained very comprehensive and curated Wikipedia Encyclopedia.
+* Thousands of Khan Academy video lectures on Math and Science from khanacademy.org .
+* More than 3,000 eBooks, organized by bookshelves, from Project Gutenberg.
+* Full Medical Encyclopedia, MedlinePlus, from the U.S. National Library of Medicine and the National Institutes of Health.
+* The latest Medical publications and Health Guides from Hesperian.
+* The OLPC Collections form the OLPC project.
+* Teachers resources from the UNESCO International Institute for Capacity Building in Africa
+* And much more...
+
 ### An overview of RACHEL: the software and the contents.
 RACHEL is a project originally created not in the technology hotspots of Silicon Valley, London, or the First World; instead it started in Central America where volunteers wanted to help improve education in their schools, even when there was little money to pay for materials, books, or even teachers. The project expanded from Spanish to English and several other languages. As we were able to collect and collate more materials specific versions became possible, for farmers, for medicine, etc. and in Kenya, for instance, demand for installation exceeds the ability of the small World Possible team. 
 

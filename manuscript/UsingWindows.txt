@@ -12,7 +12,7 @@ We're only going to cover various topics we consider essential, and there's too 
 * File Transfer over networks
 * Networking
 * Mini web servers
-- 7-zip, not any other unzip software
+* 7-zip, not any other unzip software on Windows. Some have restrictions, others viruses, and other stuff we don't need or want. The download is <http://www.7-zip.org/download.html>
  
 ###The murky world of Viruses
 
