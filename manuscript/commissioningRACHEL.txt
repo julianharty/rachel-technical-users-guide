@@ -4,6 +4,19 @@ One way to get RACHEL running on a server is to simply follow the intructions to
 ## Commissioning using image files created by World Possible
 The project team provide documentation online on Google Docs on how to download, install and run RACHEL as a server on Windows computers, details are available at [RACHEL-Pi Download Guide](https://docs.google.com/document/d/1pfuhaV040BhN14uQ511sjmpLqsUzJ6Vy9BIH3KBh7PM/edit)
 
+Here we'll summarise the steps needed from starting the download to running RACHEL
+
+* Download (which can take days, and often fails part way through, so we need ways to cope with the unreliable network and Internet connections
+* Check we've received what was intended (by checking a calculated code called MD5 sum).
+* [Optionally] copy the downloaded file. We need plenty of space on the local drive or partition, ideally at least 3x the size of the download. 
+  * When dealing with image files for Raspberry Pi's they're created to fit on a 64GB memory card. However, 64GB is more a marketing term than a commitment the drive actually holds 64GB of materials, they often hold slightly less. A few models of memory card are significantly smaller and the image may not fit. 
+  * Conversely the image is smaller than many drives so there may be unused space of several GB on some memory cards. We can 'expand' the image once it's been copied to the memory card so that it can use all the available space.
+* Unpack, or write the image. RACHEL contains lots of materials, which are made up of 100,000's of files. There are so many files that some drive formats, and some unzip programs cannot cope.
+* Update, the sofftware and contents are snapshots created at some point in the past. Updating the software and contents can increase and protect the trustworthiness of the system.
+* Protect, viruses can infect most computers, and they can be stored on the memory and computers we're using. We can use hardware and/or software to help protect the integrity of the materials and software.  
+* Use, RACHEL includes software, particularly web server(s). When these are started they can unleash the full capabilities of the materials.
+
+##Writing the RACHEL Pi image to memory cards 
 On Microsoft Windows, there's an excellent simple utility called Win32DiskImager which is available from <http://sourceforge.net/projects/win32diskimager/files/latest/download> Details of how to use this command are in the above online document. 
 
 On Linux we use the `dd` command to write the downloaded image to a memory card. 

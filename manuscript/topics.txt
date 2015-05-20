@@ -1,3 +1,9 @@
 # Suggested Topics
 Here's the place to add any topics we'd like to suggest for this book.
-At the moment we don't have any :) although there's still plenty of work to do improving the current topics and chapters.
+
+20-May-2015: 
+New topics asked at the workshop at elearning-africa
+* Can the Android apps work on BlackBerry 10 devices? Potentially yes, they should, if the relevant API's are supported. However Kiwix uses a C++ library that might need some work to compile / port. And the small webserver used by Android RACHEL may not work either.
+* How to communicate, digitally, in nomadic environments in North Sudan.
+* RACHEL in Arabic?
+

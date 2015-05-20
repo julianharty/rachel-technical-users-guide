@@ -59,7 +59,8 @@ Low cost power meters are available for USB. We can use these meters to measure 
 ##Power engineering
 TBC here are the main topics I would like to include
 
-* Duty cycles
+###Duty cycles
+Some things are always in use, until they expire. Others are used for a period then idle (or turned off).
 * Power consumption
 * Efficiency
 
