@@ -3,9 +3,9 @@ Software can help us troubleshoot configuration problems, and runtime errors. We
 
 Each operating system has particular tools, here's a brief table for comparison.
 
-|Utility|Android|Linux|Windows|
--------------------------------
-|System logs|adb logcat|dmesg|eventvwr|
-|System health|?|top|Task Manager|
-|IP info|?|ifconfig|ipconfig|
--------------------------------
+|Utility      |   Android|   Linux|     Windows|
+------------------------------------------------
+|System logs  |adb logcat|   dmesg|    eventvwr|
+|System health|         ?|     top|Task Manager|
+|IP info      |         ?|ifconfig|    ipconfig|
+------------------------------------------------
