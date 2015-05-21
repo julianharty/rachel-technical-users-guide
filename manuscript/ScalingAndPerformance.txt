@@ -17,12 +17,14 @@ My current computer, an X220 i5 only has 3 USB 2.0 ports. All the USB drives sup
 
 {title="Results for 2 runs, each with brand new USB drives."}
 |measurement|Integral 32GB drive|   Sandisk|Kingston 64GB drive|
+|-----------|-------------------|----------|-------------------|
 |       real|         70m59.300s|49m28.714s|          99m2.430s|
 |       user|         13m46.886s| 14m2.900s|         14m15.597s|
 |        sys|          8m21.883s| 8m58.815s|          9m21.392s|
 |       real|         65m30.835s| 47m3.925s|         88m45.254s|
 |       user|          4m54.700s| 7m58.874s|         13m40.720s|
 |        sys|          3m11.843s| 4m30.248s|          7m56.550s|
+|-----------|-------------------|----------|-------------------|
 
 Even in the first test comparison there's a 2:1 ratio between the drives, in the same USB slot. Now imagine trying to prepare 10, 50 or even 1,000 USB drives to ship to projects!
 
