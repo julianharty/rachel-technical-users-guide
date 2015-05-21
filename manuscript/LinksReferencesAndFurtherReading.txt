@@ -42,4 +42,4 @@ Most of us contribute our time freely, in addition to whatever else we do to ear
 * <http://shamba.worldpossible.org/> the version for farmers in East Africa. An early release.
 * <http://www.biblioteca.worldpossible.org/guatemala/> for Guatemala
 * <http://rachel64es.read-books.org/>
-* ,http://library.kiwix.org/> Kiwix Server (kiwix-serve) online
+* <http://library.kiwix.org/> Kiwix Server (kiwix-serve) online
