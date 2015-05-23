@@ -14,7 +14,15 @@ Read Only Memory (ROM) is written once, then not updated again. We're familiar w
 
 SD-Cards can have a 'read-only' swtich. Provided the computer honours this switch, we can use it to protect the contents of the drive. Micro-SD-Cards and USB drives don't have this protection.  
 
-Sadly there are few cost-effective ways to switch USB or Hard drives to read-only. There are some relatively expensive connectors, from around $500 USD, for those who can afford them. 
+Sadly there are few cost-effective ways to switch USB or Hard drives to read-only. There are some relatively expensive connectors, from around $500 USD, for those who can afford them. Examples of these devices include:
+* [Tableau T8-R2 Forensic USB Bridge](https://www.guidancesoftware.com/products/Pages/tableau/products/forensic-bridges/t8-r2.aspx)
+
+####Advanced topic: Configuring Windows Registry 
+Windows XP apparently includes a registry setting to treat a drive as read-only.
+Using `RegEdit`cCreate a Registry key of `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\StorageDevicePolicies` then create a `DWORD` called `WriteProtect`and give it a value of `1`.
+See the more complete instructions at [Configure USB Disks to be Read-Only in Windows XP SP2](https://www.petri.com/configure_usb_disks_to_be_read_only_in_xp_sp2)
+
+Note: these instructions haven't been tested and may not stop powerful viruses which may bypass this somehow.
 
 ##Leave the computer as you'd wish to find it
 There are plenty of choices of anti-virus software. They vary significantly in performance, effectiveness, behaviours and price. We're not aware of a 'best' choice. If the computer has Windows 7 or later then the Microsoft Security Essentials software is a reasonable option. For Windows XP, we need another product (or potentially we could switch to Ubuntu as the operating system?) 
