@@ -23,6 +23,14 @@ The core command is `adb` provided in the Android SDK. For Ubuntu this is also a
 
 `adb shell` connects us to an Android device that has debugging enabled and that's currently connected using a USB cable. It's possible to connect using Wi-Fi with some extra configuration.
 
+##Commands to transfer files
+It's useful and sometimes essential to be able to transfer files between computers over a network. There are various well-proven commands available. These include scp and rsync on Linux computers (also available for Windows in cygwin) and `adb push` & `adb pull` for Android devices connected to a computer.
+
+`rsync` is particularly useful as it can restart partial downloads. It supports compression while transferring files to reduce the network traffic, which may also reduce costs when the price is based on the bytes transferred. 
+
+`wget` and `curl` are also worth considering, and I've found `curl` works very well when downloading RACHEL images over the Internet. Here's an example of using `curl` to download one of the images:
+
+`curl http://rachelfriends.org/rachelpi_64EN/rachelpi2_64EN_3.4.img --retry 999 --retry-max-time 0 -O -C -`
 
 ##Signals and Cables
 There are two established ways to connect computers. These are using radio waves and physical cables. Physical networks are almost always using technology called Ethernet. Radio waves vary in frequency, tere are several 'bands' of frequencies used for Wi-Fi networks, and others for mobile phone networks such as 3G, CDMA, and 4G (also known as Wi-Max). We seldom need to be concerned with the details unless there are conflicts between several Wi-Fi networks.
