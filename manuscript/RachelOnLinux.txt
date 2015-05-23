@@ -1,0 +1,57 @@
+#RACHEL on Linux (Ubuntu)
+We currently package RACHEL for Windows and Raspberry Pi's. We also provide an Android app with some instructions on how to get RACHEL working on Android. This chapter is intended to help you get RACHEL working on Linux computers that use Debian packages, and more specifically on Ubuntu. The material is being developed using Ubuntu Desktop 10.04 LTS, you may need to tweak these instructions for other versions of Ubuntu and for other flavours of Debian-based Linux environments.
+
+##Overview
+Please read the following guide [How To Install Linux, nginx, MySQL, PHP (LEMP) stack on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-14-04) and follow the instructions. I made few changes for RACHEL, these include:
+
+* changing the filename from default to rachel
+* leaving the servername set to localhost
+* leaving `cgi.fix_pathinfo` commented out (at least until I complete these instructions) 
+
+##TODO
+I still need to integrate RACHEL's MySQL database.
+ 
+##Example configuration files
+Here are some examples from my current Ubuntu laptop.
+
+`/etc/nginx/sites-available/rachel`
+
+~~~~~~~~
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server ipv6only=on;
+
+        root  /home/julian/Downloads/rachel/rachelusb_32EN_3.1.5/rachelusb_32EN_3.1.4/RACHEL/bin/www;
+
+        index index.php index.html index.htm;
+
+        # Make site accessible from http://localhost/
+        server_name localhost;
+
+        location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                try_files $uri $uri/ =404;
+        }
+
+        error_page 404 /404.html;
+
+        # redirect server error pages to the static page /50x.html
+        error_page 500 502 503 504 /50x.html;
+        location = /50x.html {
+                root /usr/share/nginx/html;
+        }
+
+        # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+        #
+        location ~ \.php$ {
+                fastcgi_split_path_info ^(.+\.php)(/.+)$;
+                try_files $uri =404;
+                fastcgi_pass unix:/var/run/php5-fpm.sock;
+                fastcgi_index index.php;
+                fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+                include fastcgi_params;
+        }
+}
+
+~~~~~~~~

@@ -9,6 +9,7 @@ ConnectingComputers.txt
 Troubleshooting.txt
 usbRACHEL.txt
 RachelOnAndroid.txt
+RachelOnLinux.txt
 ScalingAndPerformance.txt
 LinksReferencesAndFurtherReading.txt
 Paraphernalia.txt
