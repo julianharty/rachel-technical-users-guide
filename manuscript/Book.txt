@@ -1,6 +1,6 @@
-commissioningRACHEL.txt
-introduction.txt
-safeworkingpractices.txt
+CommissioningRACHEL.txt
+Introduction.txt
+SafeWorkingPractices.txt
 Power.txt
 UsingAndroid.txt
 UsingWindows.txt
@@ -15,4 +15,5 @@ Paraphernalia.txt
 WorkingWithRaspberryPis.txt
 WorkingWithMaterials.txt
 WorkingWithSoftwareDevelopment.txt
+ContributingToRACHEL.txt
 topics.txt

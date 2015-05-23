@@ -1,7 +1,8 @@
 # USB RACHEL
-RACHEL can be used from a USB drive. Much of the contents can be used directly, for instance, by accessing the files directly in a Web Browser (using the file:// prefix), or ZIM files can be read and used in the Kiwix application.. However, some of the software, for instance Khan Academy Lite needs to run as a web server.
+RACHEL can be used from a USB drive. Much of the contents can be used directly, for instance, by accessing the files directly in a Web Browser (using the file:// prefix), or ZIM files can be read and used in the Kiwix application.. However, some of the software, for instance Khan Academy Lite needs to run as a web server. TBC check what won't work if the Web Server and MySQL functionality aren't used.
 
 USB RACHEL includes an embedded web server and database that can be used on Windows Computers. 
 
 There are lots of files, which take a lot of space. The choice of file format on the computer can affect performance and whether the files can all fit on a single drive. We recommend exFAT (check) provided the computer is able to read and use this format. The minimum requirement for Microsoft Windows is XP with Service Pack 2 or 3 and the following update from Microsoft https://support.microsoft.com/en-us/kb/955704
 
+TBC Add section(s) on what's involved in terms of running the software: web server, MySQL, etc.

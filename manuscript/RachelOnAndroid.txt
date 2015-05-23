@@ -1,7 +1,14 @@
 #RACHEL on Android
+RACHEL for Android is currently an experimental project. The software works on many devices and versions of Android. It essentially consists of a small web server and a small database server (as does RACHEL for Windows computers) together with the many files comprising RACHEL USB release. The Android device can be configured to share RACHEL with other people on the same Wi-Fi network.
+
+The device needs enough free storage available to hold these files (around 22GB) which is more than most devices have. Thankfully many devices accept a micro SD-Card, so the files can be copied onto a 32GB and used in the micro SD-Card slot. The quality and performance of the micro SD-Card may affect how well RACHEL behaves for the user(s). 
+
 Downloading, installing, and adding contents are all currently documented online 
 [Installing RACHEL on an Andoid Tablet, etc](http://dev.worldpossible.org/wiki/index.php/Installing_RACHEL_on_Andoid_Tablet_or_Android_MiniPC)
 
 On Android RACHEL relies on a small web server and has a mySQL database running in the background. The embedded web server means the app is unlikely to be approved by Google's App Store. The contents need to be available on the device. They can be copied to internal storage (known as `/sdcard/` for historical Android reasons), or on removeable storage such as a micro-SD card or USB storage connected using OTG (On The Go) protocol. 
- 
-TBC migrate the instructions here? 
+
+##Notes
+
+* TBC migrate the instructions here?
+* Check also the comment about restrictions in some versions of Android (4.4?) that cause RACHEL problems on these versions of Android. 

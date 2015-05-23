@@ -1,0 +1,14 @@
+#Contributing to RACHEL and related projects
+RACHEL is created, maintained and enhanced by various volunteers. The various projects RACHEL combines also rely mainly on voluneers. Perhaps you'd like to get involved in helping create new material for RACHEL, maintain materials and the software programs, and enhance them?
+
+All the projects welcome help, many have guides so you can get started and learn what to do in order to contribute effectively.
+
+##Contributing to KA-Lite
+[Translating KA-Lite](https://github.com/learningequality/ka-lite/wiki/Internationalization:-Contributing-Translations)
+[Contributing to the code (software)](https://github.com/learningequality/ka-lite/wiki)
+
+##Contributing to Kiwix
+A good place to learn about known projects for Kiwix is <http://www.kiwix.org/wiki/Projects>
+
+##Contributing to RACHEL
+TBC 2015-05-23

@@ -9,3 +9,7 @@ Each operating system has particular tools, here's a brief table for comparison.
 |System health|         ?|     top|Task Manager|
 |IP info      |         ?|ifconfig|    ipconfig|
 |-------------|----------|--------|------------|
+
+Where practical have spares of each item available. This enables us to test whether the fault is related to a specific item, or not. Be careful as failures may be a symptom of another problem - the cause. And sometimes, unfortunately, the cause may cause multiple and repeated faitures of other items. For instance, a short in a power lead may cause previously working fuses to fail.
+
+Software utilities such as `grep` can help us filter and search files, including logs, for indicators of [possible] problems. However,`grep` needs to be downloaded and installed on Windows computers, or an existing utility called `findstr` can be used.

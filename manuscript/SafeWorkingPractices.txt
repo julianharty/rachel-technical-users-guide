@@ -1,0 +1,27 @@
+# Safe Working Practices
+
+* protect your equipment against viruses
+  * write protect tabs, read-only storage e.g. CD-ROMs, DVDs.
+  * use trustworthy anti-virus scanners, real-time protection, etc.
+* protect your equipment against adverse physical conditions (dust, water, salt, heat, etc)
+
+##Clean the computer before you work
+*"An ounce of prevention is worth a pound of cure."*
+On the assumption that Windows computers in the field might have viruses, let's scan it for potential viruses before plugging in any of our drives. Mirosoft Safety Scanner is one of several useful software tools which they update frequently to try and catch even very recent viruses. It needs to be downloaded while you have an Internet connection, it can then be used offline. They provide two versions, one each for 32-bit and 64-bit Windows installations. If practical, create and use it on a DVD-ROM to further reduce the risk of infecting your USB drives.
+
+###Use read-only options where practical
+Read Only Memory (ROM) is written once, then not updated again. We're familiar with CD-ROMs and DVD-ROMs. Where practical using these reduces the chances of getting computer viruses to virtually nil. 
+
+SD-Cards can have a 'read-only' swtich. Provided the computer honours this switch, we can use it to protect the contents of the drive. Micro-SD-Cards and USB drives don't have this protection.  
+
+Sadly there are few cost-effective ways to switch USB or Hard drives to read-only. There are some relatively expensive connectors, from around $500 USD, for those who can afford them. 
+
+##Leave the computer as you'd wish to find it
+There are plenty of choices of anti-virus software. They vary significantly in performance, effectiveness, behaviours and price. We're not aware of a 'best' choice. If the computer has Windows 7 or later then the Microsoft Security Essentials software is a reasonable option. For Windows XP, we need another product (or potentially we could switch to Ubuntu as the operating system?) 
+
+We recommend checking reviews online as anti-virus software and products change rapidly. 
+
+##Coping with adverse environmental conditions
+My first visit to Dadaab refugee camp, a semi-desert area with 40C air temperature, was enough to remind me how sensitive some computers are to physical conditions. Computers designed for air-conditioned offices in the first world may suffer and fail more rapidly in harsh conditions. Where you have choices on the equipment used, consider stuff that is resilient and robust against whatever conditions we might expect or predict based on where the equipment will be used. Paradoxically, some of the most inexpensive equipment may cope best. 
+
+We may also be able to protect the equipment, and also maintain it, to reduce the risk of it failing when it needs to be used.

@@ -24,6 +24,10 @@ We advise you to only use genuine licensed copies of Microsoft Windows if you wa
 
 * Run As Administrator right-click menu
 
+###Anti-Virus software blocking RACHEL
+
+* stops some services from being available at all
+* we can often fix the problem by adding explicit exceptions
 ###Terminal Emulators
 
 * Putty: Free, basic useful software that enables a terminal window for remote, connected devices. 
