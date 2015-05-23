@@ -21,7 +21,7 @@ When the computer consumes power, that power leaves the battery. Eventually the 
 
 Some batteries can be recharged while they are providing power, others are limited to either being charged or providing power. Generally we prefer using batteries that can be recharged while being used, otherwise our computer will not be available when the battery is being charged. 
 
-###Power for low cost computers and Android Tablets
+##Power for low cost computers and Android Tablets
 Most of our projects use computers powered using USB connections. USB power is 5 volts DC. Therefore much of our work and equipment focuses on USB power. This includes the solar panels, batteries, and power adapters/chargers. 
 
 ###USB power
@@ -31,12 +31,22 @@ As devices became more sophisticated some of them needed more power than the ori
 
 The devices and the power provider both need to use a common protocol to communicate effectively. Otherwise the power provider should limit the power to protect itself and the device that is asking for power. Miscommunications between the device and the power can cause problems for us, devices may not work properly when they don't have enough power. Poor quality power supplies may overheat, short-circuit or fail.
    
-###Batteries
+###How batteries work
 Batteries use chemical reactions to store power and to provide power. The chemical reactions generate heat, and too much heat may be dangerous to us and to the battery. Over time and as batteries are used they lose their potency. Eventually a battery may become so work out that we cannot usefully use it any more. Old batteries can be recycled which protects our environment.
 
 Batteries have a defined capacity, measured in milli-Amp hours (mAh). They may have a limit on how much power they can provide at any one time. This may affect us if our computer(s) need more power that the battery is able to safely provide, so we try to design our systems so the battery is able to provide more power than whatever is connected to it. The actual capacity of a battery decreases as it loses its potency. Often the decrease also affects how the power is delivered, where a battery suddenly becomes exhausted. We may need to account and allow for this behaviour when designing and implementing a e-learning system, otherwise a system that initially works and serves the users well may start to fail, perhaps in a few months time. Once a system starts failing and becoming unreliable it's much less useful for the users who may become frustrated and stop using the system. 
 
-We can test and measure the behaviours of various batteries in order to buy the most suitable and available models, and so we can design viable e-learning systems.
+###Continuous batteries vs. offline while charging
+Some USB battery packs are able to be charged while they continue to provide power to devices connected to them. Other batteries stop providing power while they're being recharged. For most situations the difference is not important, however when the battery is used to power a Raspberry Pi (or other similar single board computer) the difference has a major effect. With the continuous batteries the computer continues to run regardless of whether the battery is being charged or not (unless the battery becomes exhausted i.e. it's been fully dischaged). With the other batteries, the computer stops as it has no power when the battery is being charged. 
+
+If the offline-charging batteries have enough power to support whatever is connected for as long as we need that computer to run, then we may have an overall system that's acceptable - provided the computer is shutdown safely (to protect the contents of the system on that computer). We could potentially devise an overall system where we have several batteries, one in use and the others either charged or being charged. Then the computer is shutdown, for example at the end of the school day, and the battery replaced with one that's been fully charged, and the previous battery can then be charged offline.
+
+I don't know why some batteries work as online batteries, and others only as offline batteries. Perhaps the online models have more sophisticated charging electronic circuits.
+
+We can test and measure the behaviours of various batteries in order to buy the most suitable and available models, and so we can design viable e-learning systems. We have found that the behaviours of batteries vary significantly. Some models from the same brand may work as online-batteries, but others work as offline batteries.
+
+####How to test whether batteries support online charging
+All batteries appear to support offline charging (otherwise they're unlikely to be effective as batteries!). Only some work as online batteries. A simple way to test is to connect something that draws significant power, at least 500 milli-watts, which indicates that it's working - for instance a bright LED light - then connect power to the battery. If the light dims, flickers, or extinguishes then the battery is not suitable for online use. This test isn't quite sufficient as computers may be more sensitive to power problems, so batteries that pass the simple test can then be tested again with a Raspberry Pi connected. Connect something to the computer (either a display or a network connection) and make sure the computer is running OK. Then try a similar test, connect and then disconnect the charging power to the battery. If the computer continues running than we have a battery that may work acceptably in online mode. We'll only really know whether it's acceptable through longer term testing or use (which is a form of testing in practice). 
 
 ###Charging and recharging
 Batteries are designed and specified for a number of recharge 'cycles'; for instance I recently bought 2 USB batteries who promise 500 recharge cycles - they should continue working for at least 500 discharges and recharges. Where practical we may want to design our systems so we reduce the number of charge cycles, some computers are designed to do this automatically, however for Raspberry Pi's, recharging USB batteries, and other low-cost small computers we may need to devise a system that does this instead. 
