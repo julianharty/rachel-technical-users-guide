@@ -124,3 +124,13 @@ drwxr-xr-x  2 mysql mysql     4096 May 24 20:42 test
 
 ##Extra notes
 The following web site provides some useful ideas, including the `test.php` page. However the security settings differ from those used above and I prefer not to use them as they seem too permissive (too open). <http://wiki.nginx.org/PHPFcgiExample>
+
+##Known Unknowns
+There are various things I know I don't know. They're not necessarily limited to running RACHEL on Linux, however I realised them during the process and they might as well be mentioned here.
+
+* How to install and configure RACHEL cleanly on Ubuntu (the above is distilled from the things I did which included some backtracking)
+* How the full-text index is created and updated
+* What the limitations are of the full-text search
+* What the appropriate security settings should be
+* How to configure nginx for access from other machines (where it can cope with the IP address changing and not having or using DNS)
+* What to do with the zipped `sphider_plus.zip` file used on Android 
