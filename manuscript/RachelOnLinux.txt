@@ -1,17 +1,14 @@
 #RACHEL on Linux (Ubuntu)
 We currently package RACHEL for Windows and Raspberry Pi's. We also provide an Android app with some instructions on how to get RACHEL working on Android. This chapter is intended to help you get RACHEL working on Linux computers that use Debian packages, and more specifically on Ubuntu. The material is being developed using Ubuntu Desktop 10.04 LTS, you may need to tweak these instructions for other versions of Ubuntu and for other flavours of Debian-based Linux environments.
 
-##Overview
-Please read the following guide [How To Install Linux, nginx, MySQL, PHP (LEMP) stack on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-14-04) and follow the instructions. I made few changes for RACHEL, these include:
+##Installing the web server
+Caveat: I had already installed nginx earlier, so skipped some of the steps in the following article. Please read the following guide [How To Install Linux, nginx, MySQL, PHP (LEMP) stack on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-14-04) and follow the instructions. I made few changes for RACHEL, these include:
 
 * changing the filename from default to rachel
 * leaving the servername set to localhost
 * leaving `cgi.fix_pathinfo` commented out (at least until I complete these instructions) 
 
-##TODO
-I still need to integrate RACHEL's MySQL database.
- 
-##Example configuration files
+###Example configuration files
 Here are some examples from my current Ubuntu laptop.
 
 `/etc/nginx/sites-available/rachel`
@@ -55,3 +52,75 @@ server {
 }
 
 ~~~~~~~~
+
+After some fiddling (I'll find out when I repeat these instructions on a clean machine) I managed to launch and run RACHEL in a web browser locally on the same machine. We would need to amend the security settings in nginx to allow remote access, TBC determine these changes.
+Limitations:
+
+* The full-text search from the RACHEL homepage doesn't work at this stage, otherwise the web contents are useable, including the videos. We will get the full text search working in the next section.
+
+##Enabling full-text search
+Full-text search in RACHEL enables users to search and find contents that match their search term(s). RACHEL currently uses `rsphider` which in turn relies on mySQL. At the time of writing, RACHEL for Windows uses mySQL 5.6 while Ubuntu 14.04 LTS provides 5.5 by default. I discovered I needed to explicitly install 5.6 to get mySQL to accept the RACHEL mySQL databases.
+
+###Installing mySQL 5.6
+
+`sudo apt-get install mysql-server-5.6`
+
+We recommend running the script to enhance security: 
+
+###Migrating RACHEL rsphider mySQL database files
+NB: This process doesn't follow the recommended mySQL practices, we should be able to find more robust and standardised methods in future. For now, this seems to work and we probably should find ways to script the creating, maintenance and updating of the full-text database as a more strategic and elegant approach. 
+
+Overview of steps:
+
+* Hide the default databases: in `/var/lib` run `sudo mv mysql mysql.local`
+* Make a fresh empty location for our database files: `sudo mkdir /var/lib/mysql` 
+* Copy RACHEL's mySQL database files across: `sudo cp -r /home/julian/Downloads/rachel/rachelusb_32EN_3.1.5/rachelusb_32EN_3.1.4/RACHEL/bin/bin/database/mysql-5.6.20/data/* /var/lib/mysql/`
+* Run various `sudo chown` commands so the paths in `/var/lib/mysql/' See below for examples.
+* Start mySQL.
+* Try the search in your web browser.
+
+~~~~~~~~
+
+sudo chown -R mysql:mysql ib_logfile0
+sudo chown -R mysql:mysql ib_logfile1
+sudo chown -R mysql:mysql ibdata1 
+sudo chown -R mysql:mysql sphider_plus 
+sudo chown -R mysql:mysql performance_schema
+sudo chown -R mysql:mysql .
+sudo chown -R mysql:root mysql
+
+~~~~~~~~
+
+The following reflects the current permissions (some were applied automatically after upgrading from mySQL 5.5 to 5.6)
+
+~~~~~~~~
+sudo ls -la /var/lib/mysql
+drwx------  6 mysql mysql     4096 May 24 20:51 .
+drwxr-xr-x 78 root  root      4096 May 24 20:50 ..
+-rw-r--r--  1 mysql mysql       56 May 24 20:42 auto.cnf
+-rw-r--r--  1 root  root         0 May 24 20:50 debian-5.6.flag
+-rw-r--r--  1 mysql mysql 12582912 May 24 20:50 ibdata1
+-rw-r--r--  1 mysql mysql 50331648 May 24 20:51 ib_logfile0
+-rw-r--r--  1 mysql mysql 50331648 May 24 20:42 ib_logfile1
+drwx------  2 mysql mysql     4096 May 24 20:51 mysql
+-rw-rw----  1 root  root         6 May 24 20:51 mysql_upgrade_info
+-rw-r--r--  1 mysql mysql     6425 May 24 20:42 nuc.err
+-rw-r--r--  1 mysql mysql        5 May 24 20:42 nuc.pid
+drwx------  2 mysql mysql     4096 May 24 20:51 performance_schema
+drwxr-xr-x  2 mysql mysql     4096 May 24 20:42 sphider_plus
+drwxr-xr-x  2 mysql mysql     4096 May 24 20:42 test
+
+~~~~~~~~
+
+###Sample Commands
+
+`http://localhost/rsphider/search.php?query_t=ethiopia&submit=Search&search=1&db=0&prefix=0`
+
+`sudo service mysql start` or use `mysqld -v` which provides more detailed information, especially useful if mySQL fails to start.
+`dmesg | grep mysql` is also useful to find reported problems when mySQL fails to start.
+`sudo service mysql status`
+`mysql --user root -p` then enter your password interactively, so it's not stored in the command history
+`mysql> show databases;`
+
+##Extra notes
+The following web site provides some useful ideas, including the `test.php` page. However the security settings differ from those used above and I prefer not to use them as they seem too permissive (too open). <http://wiki.nginx.org/PHPFcgiExample>
