@@ -1,26 +1,31 @@
 #Paraphenalia
 Projects need more than a few Tablet computers. And in particular, those who setup, configure and maintain the technology need and benefit from a wide range of equipment and software.
 
-* Memory card readers (and writers):
-* Portable Hard disk(s) with copies of software we use. 500GB minimum capacity, 1TB recommended.
-* Cables, adapters, spares:
-* Keyboard and display:
-* Wi-Fi hotspot:
-* [Crossover] Ethernet cable:
-* 3G router, local SIM card with data bundle:
-* Portable loudspeaker:
+* A lightweight, compact laptop with all the software and ideally the RACHEL image files, Kiwix ZIMs, etc. available for use. [I use an Leonvo X220, and/or a Macbook Air as they're robust, powerful, light, and good quality computers.] If you intend to compile or develop software, prepare it with the extra software packages, compilers, etc. Update the software before heading to a location, etc. Remember to take the power supply and suitable power lead, including an adapter if needed for any of the locations you expect to visit.
+* Memory card readers (and writers): To read and write files, and Raspberry Pi images from a computer, using a USB port. Some computers include a memory card slot (typically SD-Card size), which are a reasonable alternative. Have at least one trustworthy adapter for micro SC-Cards. 
+* Portable Hard disk(s) with copies of software we use. 500GB minimum capacity, 1TB recommended. Store copies of the packaged RACHEL distributions, and the unpacked RACHEL USB materials. Also include 7-zip installation files for Microsoft Windows, and various anti-virus programs. 
+* USB memory sticks, currently I'd recommend carrying several 32GB and several 64GB drives. All USB 3.0 if you have a computer with at least one USB 3.0 port.
+* Cables, adapters, spares: At least one HDMI, one Ethernet, several micro-USB, cables, etc. A suitable HDMI-to-VGA cable (there are several types, check whether it'll work with a Raspberry Pi before buying the cable. TBC - provide more details if/when I have them available. 
+* Small USB Keyboard and portable display (ideally HDMI): Small 12v displays are sold globally to fit in cars. Some of these support VGA, most accept composite-Video (which Raspberry Pi's provide), a tiny number (at least currently) support HDMI. The USB keyboard and display enable us to work directly on the small computer, and can be the decider between understanding and fixing a problem in the field vs. having to take the equipment off-site and work on them elsewhere. Note: many flatscren TV's, including those in hotel rooms and and in bars (for watching the ever-popular Premier League football games) have HDMI connects and can be repurposed as very effective Raspberry Pi displays.
+* Wi-Fi hotspot: One of several ways to connect the devices together.
+* [Crossover] Ethernet cable: Another good, and minimalist way to connect Raspberry Pi Model B's (and other devices with a working Ethernet port) to our laptop so we can manage and update them.
+* 3G router, local SIM card with data bundle: Useful for downloading updates, searching for answers on the web, sending information and requests for help, etc.
+* Portable loudspeaker: so people can hear audio in a larger area e.g. a classroom. The small rechargeable ones, such as the Wowee, are excellent.
 * Digital camera for pictures and recording videos:
-* Notebook:
-* Portable projector:
-* Power adapters and power strips:
-* Solar panel & rechargable USB power bank(s):
-* Anti-virus and virus-removal software:
+* Notebook: Highly portable and usable virtually anywhere (except when it's dark) to make notes, draw diagrams, communicate some ideas and concepts, etc. Remember to have pens and pencils too.
+* Portable projector: Optional, could be used to teach or demonstrate materials to a group of people. I use one from Brookstone in the USA, which runs on 12v (so can be powered from a car battery) and gives 200 lumens of light - quite good for the size and weight.
+* Power adapters and power strips: even when somewhere has power, they seldom have enough power strips to keep your various equipment in working order. Travelling to other locations means you may also need power adapters for the mains sockets.  
+* Solar panel & rechargable USB power bank(s): Useful for testing whether solar power is viable in a particular location. The USB powerbank can be charged (if the solar is viable) and used to power various devices, including a Raspberry Pi, an Android tablet, etc.
+* Anti-virus and virus-removal software: how else will you check and clean Windows computers you have to work on?
+* Rechargeable torch, possibly integrated in a USB powerpack such as the EasyAcc PowerBank U-Bright 3000 (which doubles as an 'online' battery).
+
 ##Partition formats
 Computer disks and drives need to be formatted before files can be stored on them. There are various common formats in use. Sometimes we need to choose the format carefully otherwise we may run out of space, sometimes unnecessarily, when there are large files (e.g. more than 2GB) and many files (as each file needs to be recorded in an invisible, finite table of files).
 * FAT32: The default format used on many drives when they are new. It has various limitations in terms of capacity of files. Not recommended for RACHEL files. 
 * exFAT: Supported in Windows XP Service Pack 2 and later with an update from Microsoft. 
 * NTFS: Default for Windows disks in computers. Not ideal for removable drives, files may be lost and drives corrupted unless you are both careful and lucky.
 * ext3: Linux only format. May work well for drives intended to be dedicated to Raspberry Pi's and micro SD-cards dedicated to Android Tablets. Like NTFS, not really intended or suitable for removable storage.
+
 ##Travelling with paraphenalia
 We need ways to travel practically with all the paraphenalia, and any other devices, etc. This is particularly important when flying and in areas where we are at risk or opportunistic theft. I travel with various bags, some clear, some stronger fabric bags with zips in bright colours, where I store the many and various pieces of equipment. For this workshop I have brought around 100 discrete pieces of equipment. Technology should always be carried in hand-luggage and be with you on the flight. Be careful to limit the combined weight and dimensions of the hand-baggage otherwise the airline may insist the bag goes in the hold (and then be at greater risk of theft at some airports in the continent).
  
