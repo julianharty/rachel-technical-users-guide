@@ -67,6 +67,7 @@ Full-text search in RACHEL enables users to search and find contents that match 
 
 We recommend running the script to enhance security: 
 
+Here was the error I got when I used 5.5 when starting `mysqld` : `status: Env must be KEY=VALUE pairs`
 ###Migrating RACHEL rsphider mySQL database files
 NB: This process doesn't follow the recommended mySQL practices, we should be able to find more robust and standardised methods in future. For now, this seems to work and we probably should find ways to script the creating, maintenance and updating of the full-text database as a more strategic and elegant approach. 
 

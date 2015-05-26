@@ -24,9 +24,26 @@ Money to pay good developers / devops / system administrator people may help us 
 
 ##Enhancing public materials
 
-##Preparing and packaging your work
+##Preparing and packaging materials
+'Local contents' is a good place to share ad-hoc materials, for instance individual PDF files. however it's not well suited to packaging a collection of content such as a set of videos, lessons, exercises, etc.
+
+Packaging materials enables them to become a distinct entity, where they can be distributed, incorporated, and used - hopefully as a cohesive body of stuff. There are various ways the material can be packaged, there are some inevitable variations needed so they are acceptable to the different programs that will read and present them. 
+
+###Packaging for Kiwix & kiwix-serve
+Kiwix and kiwix-serve use a common file format called zim, or zimfiles. These have an extension of `.zim`. The materials should be usable in a modern web browser, either served by a web server (we test with nginx), or using the `file://` protocol (which is what happens if you open an html file in Windows Explorer, and the equivalent for other operating systems. A program called `zimwriterfs` is used to package the files.
+
+###Packaging for RACHEL php Server
+RACHEL Web Server currently runs a small php script (index.php) that scans sub-folders for files with an extension of `.htmlf`. If you create one of these files (called `index.htmlf`) in the root of the package, then your contents can be integrated in the homepage of RACHEL. The file needs to contain an HTML fragment, where everything is wrapped in a `<div>` tag. 
+
+TBC add an example skeleton here.
+
+###Preparing materials
+While we can simply package the files, preparating the structure, removing unnecessary files, and making the materials more consistent in terms of layout, naming, etc. can help make the materials easier to maintain and manage. Also, consider that some users will have relatively slow, small computers, to read or interact with your materials, so you may want to check the materials are usable on low-cost underpowered tablet devices, etc.
 
 ##Shrinking the materials
+
+* Image compression - image resolution that's still usable and attractive for the target devices.
+* Removing bulky stuff - ask is it necessary, can we device a low-bandwidth alternative, etc.
 
 ##Intellectual Property
 
