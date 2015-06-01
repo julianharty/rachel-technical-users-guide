@@ -16,9 +16,22 @@ Money to pay good developers / devops / system administrator people may help us 
 
 ##Finding stuff
 
+###Making 'offline copies' of web sites
+In principle it's possible to create offline copies of sites. Technically, the key proviso is: provided the contents can work locally (without needing access to that organisation's servers, databases, etc) then it should be possible. However before we start trying to download someone's web site, we need to ensure we have their permission.
+
+TBC more on ways to copy/download online materials
+
+* PhET github example
+* How Kiwix does it
+* Web content crawlers
+* Downloaders e.g. for YouTube videos. Picking the most suitable format for videos, documents etc.
+
 ###Permission to use existing stuff
 
 ##Writing new stuff
+
+* Blogging software, such as WordPress, can be added to computers running RACHEL so that people can create and share their work locally. Potentially they could also make it available on the Internet if they have a working connection. 
+* Free software called Pachyderm can be used to create presentations in HTML5 <https://sourceforge.net/p/pachyderm/wiki/P3_Whats_New/>. We can then package and use the recorded presentations as part of our projects.
 
 ##Collaborating vs. Single author
 
