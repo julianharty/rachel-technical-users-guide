@@ -10,11 +10,12 @@ Troubleshooting.txt
 usbRACHEL.txt
 RachelOnAndroid.txt
 RachelOnLinux.txt
+MaintainingRACHEL.txt
 ScalingAndPerformance.txt
-LinksReferencesAndFurtherReading.txt
-Paraphernalia.txt
 WorkingWithRaspberryPis.txt
 WorkingWithMaterials.txt
 WorkingWithSoftwareDevelopment.txt
 ContributingToRACHEL.txt
+LinksReferencesAndFurtherReading.txt
+Paraphernalia.txt
 topics.txt
