@@ -67,10 +67,29 @@ Each charger has particular characteristics in terms of the quality and amount o
 Low cost power meters are available for USB. We can use these meters to measure power flowing through a USB cable. This means we can measure power provided from a solar panel, battery, or USB charger. DC power is measured in Volts and (milli-) Amps. The meters may not be 100% accurate, however once we have a good idea of how inaccurate a meter is we can use it to provide representative or comparative readings. I travel with at least one USB power meter so I can easily measure the power at various points in a system. Be careful as the power meter often needs to be connected 'inline', between the source and the consumer of the power. Connecting and disconnecting the power meter disrupts the power to the consumer and if that's a computer it may stop working, and potentially fail.
  
 ##Power engineering
-TBC here are the main topics I would like to include
+Power engineering enables us to understand how devices use power, the impacts power use has on the availability and viability of the system, and ways to implement more efficient and effective systems.
 
 ###Duty cycles
-Some things are always in use, until they expire. Others are used for a period then idle (or turned off).
-* Power consumption
-* Efficiency
+Duty cycles measure or assess how long a device can be in-use compared to when it needs to be idle. Some things are always in use, until they expire. Others are used for a period then idle (or turned off). For our purposes duty cycles help us assess how long particular computers or devices can be used uninterrupted, without needing to be retired or turned off. 
 
+For Android Tablets, if we can't charge them while they are being used, then the duty cycle will be quite low, as often tablets take longer to charge than how long they can be used without interruption. For instance, the Google Nexus 7 can be used in a classroom on battery power for several hours, before it then needs to be recharged. The charging often happens away from the classroom, perhaps in a separate office, and may take the rest of the day to complete (especially if there are many devices and few sources of charging). 
+
+* One way to siginficantly increase the duty cycle of the tablets is to provide charging facilities to the device, for instance using USB chargers in the classroom. 
+
+For Raspberry Pi computers, if they rely on using a battery then their duty depends on whether the battery can be charged while it's being used to power the Pi. If so, the duty cycle can be extended significantly, potentially to many months if the power is sufficiently available. (Outages of say an hour or so wouldn't have a significant event provided the battery has enough capacity to keep the device running for at least that period.)
+ 
+###Power consumption
+The more power a device uses, the more it needs - that should be obvious. Therefore it's worth spending some time seeking and selecting devices that use less power, provided they meet other criteria such as quality, price, etc. 
+
+Sometimes we can reduce the power consumption, for instance by reducing the brightness of the screen of an Android tablet in the Settings application. When we are able to reduce the power consumption, the device can be used for longer and may therefore be more useful in terms of learning and teaching, etc.
+
+With Raspberry Pi's the main factor is likely to be the choice of model, for instance the Model A's use significantly less power than the Model B's - however the reduction comes at a price in terms of performance and capabilities. It's also possible to tweak the configuration of the software to reduce power, however it's a relatively specialist topic outside the scope of this book currently. 
+
+###Efficiency
+When a computer is on it uses power, as you probably well know. Some of the power generates heat. That heat is not useful (unless you're cold) instead it means we need more power to keep the computer running. For very limited power sources such as small solar panels, the power loss may have a significant impact on being able to keep devices charged and working. There's little we can do practically, apart from test equipment, including USB chargers and batteries to determine how efficient they are. Generally we prefer devices that are more efficient.
+
+####TBC
+
+* Extended use, overheating, etc. 
+* Extra capacity in the system to cope with peaks in demand.
+* Power engineering when power is intermittently available e.g. Solar power doesn't generate useful power during the night. 

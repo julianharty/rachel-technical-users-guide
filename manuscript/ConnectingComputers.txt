@@ -76,7 +76,30 @@ If you're computer or device is connected to the Wi-Fi provided by RACHEL Pi you
 ### Local and foreign networks
 Conceptually there are local addresses and foreign ones, somewhere else on another network. Generally we want our computers to share a common, single logical local network. This means that most of the IP address will be the same, this is always the first part of the address, reading from the left. For instance they may all begin with 192.168.1 where only the final part is unique.
 
+### Getting a RACHEL Server running on an existing network
+
 If there is an existing computer network available we may want to configure our devices to share that network. To do so we would need to know various parameters such as the name of the Wi-Fi network, any password, etc. For devices where we want to assign a fixed IP address we will also need to know what IP address to use, and other details such as the subnet, the default gateway and the DNS server. We will cover each of these later in this chapter.
+
+####Raspberry Pi Model A's
+Raspberry Pi model A's don't have an Ethernet port, so they'll need to connect to the network using a USB Network adapter. Typically this is a Wi-Fi adapter such as the WiPi. The current RACHEL images configure the WiFi adapter as a network HotSpot, where it assigns IP addresses. Typically the existing network will also have a machine (typically the router to the Internet) that assigns IP addresses. Generally you'll want to reconfigure the RACHEL so that it's no longer a HotSpot, instead it would use an IP address from the existing Network. 
+
+####Raspberry Pi Model B's
+Raspberry Pi Model B's have an Ethernet port. Sometimes we may add an additional USB Wi-Fi adapter. Again the current RACHEL images configure the WiFi adapter as a network HotSpot. This means the Pi (and therefore RACHEL) can potentially be used on either network provided we also configure the Ethernet port so it has an IP address of the same network as the existing (non RACHEL) network. 
+
+####Obtaining an IP address
+The network port could use a static IP address - one that you configure the Raspberry Pi to use, or it could be configured to request and receive an IP address chosen by a service called DHCP. This service will be running on the machine that assigns IP addresses.
+
+###Finding a Raspberry Pi on the local network
+If you assigned a static IP address to a Raspberry Pi, you know enough to reach it without further information. for instance you could SSH in to the operating system running on the Pi (I'm assuming SSH has been enabled and configred, as it is on Rasberian and RACHEL images), and you could connect to RACHEL with a web browser using by adding the prefix `http://` to the IP address of the Pi.
+
+If you don't know the IP address of the Pi, there are various ways to find it. These include:
+
+* Using the Web interface of the router, which will often list which DHCP IP addresses are being used. 
+* A network scan using a command-line utility (`nmap`, or `ping`), etc.
+* Connect a keyboard and monitor to the Pi, login (probably using the `pi` account) and run `ifconfig` from the command line, then search for the IP address in the results. (there are ways to refine this command e.g. piping the output as follows `ifconfig | grep inet` and/or specifying the interface e.g. `eth0` 
+* Try using ascending IP addresses from the range that's been assigned, while this can be very time-consuming and tedious, it generally works eventually and can enable you to find the RACHEL software when no other tools or techniques are available 
+
+Each network adapter has a low-level address, called a MAC address. The first half identifies the manufacturer of the network adapter. With practice we can learn to recognise the prefix for network adapters used by the Pi. TBC add commonly used prefixes for the Ethernet and WiPi adapters.
 
 ### Subnets
 The subnet is a filter that matches the common part of the addresses, at least for the purposes of this book and our projects. The popular term is the subnet mask, which can be represented in several forms. These include the .dot notation e.g. 192.168.1.x and /24 which represents the number of bits in the network address that remain constant for each address in this network. 
