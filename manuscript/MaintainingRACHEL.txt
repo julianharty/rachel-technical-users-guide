@@ -1,0 +1,17 @@
+#Maintaining RACHEL
+Computers need to be maintained in good working order so they can continue to operate efficiently and effectively. We also need to make precautionary backups, particularly of databases, and of other data generated such as usage logs if we want to be able to understand how the software is being used, etc. Finally, we need to protect the integrity of the computers by shutting them down cleanly before power is removed. Android Tablets and other devices with integrated batteries may be configured to do this by their operating system. For other devices, including Raspberry Pi's we may need to setup and add appropriate configuration scripts, etc. to suit it's power source(s).
+
+##Maintaining RACHEL on Raspberry Pis
+*this is a rough set of notes, probably worth expanding.* 
+Here are some things to consider to help operate the software longer term:
+
+1. Backing up the SQLite database on a regular basis (protect the usage records, accounts, etc.) 
+2. Expanding the partition to use all the available space on the 128GB memory card (we're currently only using about 64GB)
+3. Providing ways to safely shutdown the ka-lite software (otherwise there is a risk that the memory card will be corrupted and the software fail to work after power outages for the raspberry pi).
+4. Updating the ka-lite software (using git commands)
+5. Adding local contents and materials (possible through the Rachel Web User Interface AFAIK).
+6. Installing kiwix to replace the current wikipedia contents (I will need to send you instructions which I've yet to write).
+
+##External Information
+
+* User and Installation Guides for KA-Lite <https://learningequality.org/ka-lite/user-guides/> 

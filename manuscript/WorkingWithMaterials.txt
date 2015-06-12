@@ -45,6 +45,10 @@ Packaging materials enables them to become a distinct entity, where they can be 
 ###Packaging for Kiwix & kiwix-serve
 Kiwix and kiwix-serve use a common file format called zim, or zimfiles. These have an extension of `.zim`. The materials should be usable in a modern web browser, either served by a web server (we test with nginx), or using the `file://` protocol (which is what happens if you open an html file in Windows Explorer, and the equivalent for other operating systems. A program called `zimwriterfs` is used to package the files.
 
+###Using Contents management software
+
+* We could try a simple contents management program such as Statamic <http://statamic.com/learn> (Thank you Damien for the suggestion). 
+
 ###Packaging for RACHEL php Server
 RACHEL Web Server currently runs a small php script (index.php) that scans sub-folders for files with an extension of `.htmlf`. If you create one of these files (called `index.htmlf`) in the root of the package, then your contents can be integrated in the homepage of RACHEL. The file needs to contain an HTML fragment, where everything is wrapped in a `<div>` tag. 
 
