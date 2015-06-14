@@ -10,6 +10,9 @@ There are a couple of ways RACHEL can be used. The two most common ones are:
 
 * UwAmp provides the main web server
 * MySQL is the database server, used to support the full-text search feature in RACHEL
+* tasklist.exe (called by `Start RACHEL.bat`) which tries to detect whether the web server is already running. NB: This program is not available on Windows XP Home Edition, so we need to find a solution.
+
+If you are running Windows Security software you may be asked whether you want to unblock `Apache HTTP Server` and then `mysqld` - if so, select `unblock`.
 
 TBC Add section(s) on what's involved in terms of running the software: web server, MySQL, etc.
 
@@ -38,3 +41,32 @@ Task Manager can be started in various ways. Here are several of these ways:
 * Right-click on the Windows Bar on the desktop screen (where the Start button is on the bottom left, typically) and select `Start Task Manager`
 * Press the combination of Ctrl+Alt+Del (to lock, or reboot the computer) and select Task Manager from the dialog box that's displayed
  
+##Security Settings and Web Browsers
+
+* Internet Explorer's Security Zones. Intranet security for RACHEL on localhost. 
+
+###Choice of Web Browser
+The ultimate choice depends on various factors, however, particularly for Windows XP then either Google Chrome or Firefox are good options if they are available to install.
+
+* Google Chrome is available online from <https://google.com/chrome>
+* Firefox TBC can we provide an offline installation package?
+
+###User and Administrator roles
+
+* Different roles help improve the security and reliability of computers by limiting who can run which programs when using User accounts. The Administrator role has full power and access to everything, however this means that anyone running as an Administrator could easily make a mess of the computer, and it's easier for viruses to worm themselves into the operating system.
+* User accounts seldom have access to change security settings of antivirus software, etc. So some of these changes need to be done using an Administrator's account.
+
+The default Administrator account is called 'Administrator'. This is not listed by default in the login options. Pressing Ctrl+Alt+Del key combination twice at the login prompt can let you login using this account provided you know the password, of course.
+
+###Resetting the Administrator's password (or other passwords).
+There are various ways to reset passwords. Here are suggestions. For now, please search for details online.
+
+* Boot CD-ROMs with a password reset utility
+* Administrators can set the password for user accounts
+* Accounts can update their own password
+
+##Optimising performance
+Many of the computers where we want to run RACHEL are relatively old, overworked and underpowered compared to what we might like. The performance of RACHEL may be particularly poor (slow) when the computer doesn't have enough RAM memory for the set of running programs. For instance, on a small netbook from 2009 the computer has 1GB of RAM however the RAM needed is over 1.5GB to run RACHEL and Google Chrome (without any other applications). 
+
+Windows includes utilities to tune the performance. Microsoft provides various additional utilities to download, including: PowerToys can help tweak the UI, and (SysInternals utilities)[https://technet.microsoft.com/en-gb/sysinternals/bb545021.aspx] enable much greater control and understanding of what your operating system is doing. Microsoft provide training online for SysInternals at <https://technet.microsoft.com/en-gb/sysinternals/bb469930> - well worth watching when it's practical to do so.
+
