@@ -22,6 +22,23 @@ RACHEL is generally reliable on Windows computers. However there may be some con
 ###Troubleshooting tips
 First things first - please pay attention and note down the errors and warnings. That way you'll be able to ask for help and provide these details to whoever you ask. They're more likely to be able to help you diagnose the problems to help you get the software working again.
 
+###Problems copying files (and how to check)
+RACHEL USB currently consists of roughly 250,000 files. Sometimes the copy can fail to copy all the files, or some files may be advertently moved or deleted.
+
+* Right-click on folders in Windows Explorer and check the `Properties` of the folder. Allow Windows time to calculate the results which can take several minutes for the entire RACHEL package or any folder that includes the main contents at `bin\www` e.g. `RACHEL` or `RACHEL\bin` both contain the `www` folder in their results.
+* Run `dir /s` command in a command window
+
+Compare and contrast the number of files and folders between several computers with RACHEL installed, or compare with the files on the source USB drive. There may be some differences in the overall sizes depending on the filesystem used.
+
+`xcopy` can be run from the command line to selectively copy missing files. The key parameters are:
+
+* `/s` to include sub-folders (also known as sub-directories)
+* `/d` to tell xcopy to only copy files that are newer (which also copies missing files across since they're treated as newer).
+
+Sample command line. Run from the equivalent location on the local computer e.g. `C:\Users\julian\`: `xcopy E:\*.* . /s/d`
+This assumes we've already created a rachel... folder locally in my default folder. There are too many differences in Windows versions for me to easily document all the variations (sorry).
+ 
+
 ###Configuring antivirus software
 Some antivirus software blocks the programs used by RACHEL for Windows as a security precaution. You need to configure the antivirus software so that it doesn't block these programs. How to configure the various programs differs for each program. Some have a concept of exceptions, or exclusions, where you can tell the antivirus software to effectively ignore or trust programs in a particular folder. 
 
