@@ -88,6 +88,13 @@ With Raspberry Pi's the main factor is likely to be the choice of model, for ins
 ###Efficiency
 When a computer is on it uses power, as you probably well know. Some of the power generates heat. That heat is not useful (unless you're cold) instead it means we need more power to keep the computer running. For very limited power sources such as small solar panels, the power loss may have a significant impact on being able to keep devices charged and working. There's little we can do practically, apart from test equipment, including USB chargers and batteries to determine how efficient they are. Generally we prefer devices that are more efficient.
 
+#####"Robbing Peter to pay Paul (or compound losses)"
+We may decide to charge a battery from another battery, for instance an Android tablet from a USB power pack. When we do so, power is lost (or used) twice in the process, firstly when the power pack is charged, and secondly when it charges the Android tablet. This may be necessary in some circumstances, however as a general practice, it may be worth trying to charge each battery directly. Exceptions include:
+
+* Charging an Android tablet or phone from a solar panel. Some devices can cope with the voltage variations, others may fail either temporarily (needing a power reset to recover) or permanently if some of the internal hardware fails. We risk the cost of destorying a device to find out whether it will cope, again sometimes that may be a practical, albeit unattractive, choice.
+
+* Where there is no source of power locally, for instance the batteries may be charged in a local town and needed to charge tablets in a rural school.
+
 ####TBC
 
 * Extended use, overheating, etc. 

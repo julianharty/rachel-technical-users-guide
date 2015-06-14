@@ -1,0 +1,35 @@
+#RACHEL on Windows
+USB RACHEL includes an embedded web server and database that can be used on Windows Computers. 
+
+##Programs used by RACHEL on Windows
+
+* UwAmp provides the main web server
+* MySQL is the database server, used to support the full-text search feature in RACHEL
+
+TBC Add section(s) on what's involved in terms of running the software: web server, MySQL, etc.
+
+##When RACHEL fails to start
+RACHEL is generally reliable on Windows computers. However there may be some configuration issues to resolve in order to get RACHEL running, or there may be problems that need fixing.
+
+###Troubleshooting tips
+First things first - please pay attention and note down the errors and warnings. That way you'll be able to ask for help and provide these details to whoever you ask. They're more likely to be able to help you diagnose the problems to help you get the software working again.
+
+###Configuring antivirus software
+Some antivirus software blocks the programs used by RACHEL for Windows as a security precaution. You need to configure the antivirus software so that it doesn't block these programs. How to configure the various programs differs for each program. Some have a concept of exceptions, or exclusions, where you can tell the antivirus software to effectively ignore or trust programs in a particular folder. 
+
+`RACHEL\bin` is where the various programs are located that RACHEL needs to run. Within that folder, and nested several folders deep are the MySQL program files which also need to run. They are in `RACHEL\bin\bin\database\mysql-5.6.20\bin` (at least in the release of RACHEL when this section was written). The folder name may change in future if and when we update the version of MySQL that's used by RACHEL. 
+
+####Avast antivirus
+How to configure permanent exclusions <http://classroom.synonym.com/make-exclusions-avast-16518.html>
+
+####TBC Add additional antivirus programs 
+
+###Windows Task Manager
+Microsoft provides a powerful small program called `Task Manager` that provides information about the running programs, processes, and what's being used currently (including memory and network). It can also be used to kill (stop) running programs. We may need to use this to kill the web server or MySQL if they've not started properly (they're designed to keep running). 
+
+Task Manager can be started in various ways. Here are several of these ways:
+
+* Press the combination of these 3 keys together at the same time: Ctrl+Alt+Esc
+* Right-click on the Windows Bar on the desktop screen (where the Start button is on the bottom left, typically) and select `Start Task Manager`
+* Press the combination of Ctrl+Alt+Del (to lock, or reboot the computer) and select Task Manager from the dialog box that's displayed
+ 

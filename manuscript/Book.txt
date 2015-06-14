@@ -10,6 +10,7 @@ Troubleshooting.txt
 usbRACHEL.txt
 RachelOnAndroid.txt
 RachelOnLinux.txt
+RachelOnWindows.txt
 MaintainingRACHEL.txt
 ScalingAndPerformance.txt
 WorkingWithRaspberryPis.txt

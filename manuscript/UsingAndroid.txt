@@ -68,6 +68,11 @@ Using adb provides an integrated way to send and install and Android APK. Otherw
 ###Uninstalling apps
 Apps can be uninstalled from the Settings application. They can also be deinstalled from another computer by using adb and the root Java package name e.g. adb uninstall org.kiwix.kiwixmobile ;
 
+###Formatting SD cards
+
+* TBC Explain or link to infomation on disk formats.
+* Requirements for RACHEL and large ZIM files constrain the options.
+ 
 ##Google & other Accounts
 Many devices, including those with Google Apps, require a valid account configuring on the device. Some e.g. Nooks need their account as part of the initial configuration - the device cannot be used until it has a valid account that's been verified by their servers on the Internet. Of course, this means we need a working Internet connection as well as whatever details the account-provider demands. For some countries in Africa setting up an account may be challenging, especially if they want a UK or USA address and credit card details for that account holder.
 
