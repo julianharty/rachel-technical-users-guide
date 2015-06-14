@@ -1,6 +1,11 @@
 #RACHEL on Windows
 USB RACHEL includes an embedded web server and database that can be used on Windows Computers. 
 
+There are a couple of ways RACHEL can be used. The two most common ones are:
+
+* Running directly from the USB drive. This is fast, and an excellent way to test whether RACHEL will work on the particular Windows computer
+* Running from the computer's drive. Initially this takes much longer to setup, particularly on older computers that predate USB 3.0 drives, etc where the files may take many hours to copy from the USB drive. However, once the files are safely copied onto the computer RACHEL can be used on that computer without needing anything else and the USB drive can then be used with/on other computers.
+
 ##Programs used by RACHEL on Windows
 
 * UwAmp provides the main web server
