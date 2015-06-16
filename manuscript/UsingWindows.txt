@@ -30,17 +30,24 @@ We advise you to only use genuine licensed copies of Microsoft Windows if you wa
 * we can often fix the problem by adding explicit exceptions
 ###Terminal Emulators
 
-* Putty: Free, basic useful software that enables a terminal window for remote, connected devices. 
+* [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html): Free, basic useful software that enables a terminal window for remote, connected devices. 
 * Cygwin: A comprehensive environment that provides an Unix/Linux-like working terminal including many of the utilities and commands administrators find useful.
 
 ###Networking
 
-* ipconfig: a terminal command used to know the current IP address, and to request a DHCP address if the computer doesn't obtain one automatically.
-* ping: tests connections to computers. Those computers need to accept and respond to ping requests, some are configured to ignore them for security reasons.
+* `ipconfig`: a terminal command used to know the current IP address, and to request a DHCP address if the computer doesn't obtain one automatically.
+* `ping`: tests connections to computers. Those computers need to accept and respond to ping requests, some are configured to ignore them for security reasons.
 * Contol Panel, Network settings: a GUI to configure the various IP network parameters.  
 
 ##Pitfalls
-- Commands refuse to execute e.g. Win32DiskImager.exe
+- Commands refuse to execute e.g. `Win32DiskImager.exe` - Some programs, particularly for disk utilities, need to be run using an Administrator's account. You will need to know the details of an Administrator's account - the username and password. Once you have the details you can run programs, including `Win32DiskImager` by right-clicking on it and selecting the `Run as Administrator` option from the context menu.
+
+##Offline Installations and Offline Working
+Many programs, such as Google Chrome, Firefox, Flash Player, etc. rely on a fast, reliable network to install themselves when run in the default mode. However, the internet connection may be slow, unreliable and/or expensive so we'd like to minimise the need for the installation process to use the Internet each time (e.g. for each computer if we have several to set up). Thankfully, each of these programs offers an offline installation option. 
+
+* Firefox <http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/latest/win32/en-US/>
+* Google Chrome <http://www.google.com/chrome/eula.html?standalone=1>
+* Adobe Flash Player <https://www.adobe.com/products/flashplayer/distribution3.html>
 
 ##Alternatives to Windows
 If you are prepared to invest significant time learning how to use another computer operating system, we recommend installing the Ubuntu operating system. This has much in common with the software used on the RACHEL Raspberry Pi server so the skills you learn can be used fruitfully on both computers. Ubuntu has several flavours and releases. We suggest you use an LTS version of Desktop Ubuntu.
