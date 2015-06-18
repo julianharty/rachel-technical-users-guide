@@ -1,4 +1,4 @@
-# Commissioning RACHEL
+#Commissioning RACHEL
 One way to get RACHEL running on a server is to simply follow the intructions to use one of the existing image files, write that image to a memory card, and boot a Raspberry Pi using that image. This may be enough for some of us. However, that RACHEL server will be a clone of one created by developers the World Possible project team, and unlikely to be ideal for our environment and context. For instance the network settings might clash with other networks in your environment; the image may be too large, etc. We can customise RACHEL servers during and after commissioning the server.
 
 ## Commissioning using image files created by World Possible
@@ -57,4 +57,4 @@ Here are the topics I want to cover in this chapter
 * server name
 * content packages
 * software packages
-
+* Configuring accounts in ka-lite 

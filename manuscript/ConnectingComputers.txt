@@ -124,4 +124,6 @@ Sometimes we need to do some more complicated networking in order to get our wor
 When a computer is configured as a reverse-proxy, it allows connected devices to use it to connect to another network. The computer also needs to be configured as a DHCP server (to provide the Pi with an IP address to its Ethernet port, the Wi-Fi adapter on the Pi is being used as a Wi-Fi hotspot).
 
 The configuration of a reverse-proxy is specific to each desktop operating system. TBC add some links here.
- 
+
+##Further reading
+I found a very helpful guide on IP protocols and how all this stuff works, at <http://ipprimer.com/#/> perhaps you'll find it useful too? 

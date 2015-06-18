@@ -42,6 +42,49 @@ TBC more on ways to copy/download online materials
 
 Packaging materials enables them to become a distinct entity, where they can be distributed, incorporated, and used - hopefully as a cohesive body of stuff. There are various ways the material can be packaged, there are some inevitable variations needed so they are acceptable to the different programs that will read and present them. 
 
+###RACHEL Modules
+RACHEL consists of modules that contain various materials, such as videos, web contents, etc. Each package has a consistent structure: each is a separate folder, with a file called `index.htmlf`. 
+
+`index.htmlf` contans HTML, part of a web page, a fragment. The fragment starts with a `<div>` tag and ends with the closing `</div>` tag. The div tag has a class of `indexmodule` which helps keep the styling consistent.
+
+Here's a very simple example, from the current music theory module:
+
+~~~~~~~~
+<div class="indexmodule">
+    <a href="<?php echo $dir ?>/index.html"><img src="<?php echo $dir ?>/musictheorylogo.jpg" alt="Music Theory"></a>
+    <h2><a href="<?php echo $dir ?>/index.html">Music Theory</a></h2>
+    <p>Comprehensive music theory lessons and exercises to begin your journey into the realm of music.</p>
+</div>
+
+~~~~~~~~
+
+you may notice it references an `index.html` page. Most (but not all) modules have an `index.html` page. This `index.html` makes the contents easier to navigate from a File Explorer program such as Microsoft Explorer or Nautilus on Ubuntu.
+
+The modules are sub-folders of the following folder `/RACHEL/bin/www/modules/` (in Windows the / are replaced by \). 
+
+Here's the current set of fragments for the packages provided with USB RACHEL 32GB.
+
+~~~~~~~~
+
+./powertyping/index.htmlf
+./medline_plus/index.htmlf
+./hesperian_health/index.htmlf
+./math_expression/index.htmlf
+./khan_academy/index.htmlf
+./ebooks/index.htmlf
+./understanding_algebra/index.htmlf
+./khan_health/index.htmlf
+./olpc/index.htmlf
+./ck12/index.htmlf
+./practical_action/index.htmlf
+./infonet/index.htmlf
+./iicba/index.htmlf
+./musictheory/index.htmlf
+./wikipedia_for_schools/index.htmlf
+./scratch/index.htmlf
+
+~~~~~~~~
+
 ###Packaging for Kiwix & kiwix-serve
 Kiwix and kiwix-serve use a common file format called zim, or zimfiles. These have an extension of `.zim`. The materials should be usable in a modern web browser, either served by a web server (we test with nginx), or using the `file://` protocol (which is what happens if you open an html file in Windows Explorer, and the equivalent for other operating systems. A program called `zimwriterfs` is used to package the files.
 
