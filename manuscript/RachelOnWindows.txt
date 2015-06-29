@@ -66,7 +66,9 @@ Task Manager can be started in various ways. Here are several of these ways:
 The ultimate choice depends on various factors, however, particularly for Windows XP then either Google Chrome or Firefox are good options if they are available to install.
 
 * Google Chrome is available online from <https://google.com/chrome>
-* Firefox TBC can we provide an offline installation package?
+* Firefox 
+
+<http://lifehacker.com/download-full-firefox-and-chrome-installers-for-offline-1570335126> explains how to download full versions of Chrome and Firefox so we can install them offline. 
 
 ###User and Administrator roles
 
@@ -85,5 +87,5 @@ There are various ways to reset passwords. Here are suggestions. For now, please
 ##Optimising performance
 Many of the computers where we want to run RACHEL are relatively old, overworked and underpowered compared to what we might like. The performance of RACHEL may be particularly poor (slow) when the computer doesn't have enough RAM memory for the set of running programs. For instance, on a small netbook from 2009 the computer has 1GB of RAM however the RAM needed is over 1.5GB to run RACHEL and Google Chrome (without any other applications). 
 
-Windows includes utilities to tune the performance. Microsoft provides various additional utilities to download, including: PowerToys can help tweak the UI, and (SysInternals utilities)[https://technet.microsoft.com/en-gb/sysinternals/bb545021.aspx] enable much greater control and understanding of what your operating system is doing. Microsoft provide training online for SysInternals at <https://technet.microsoft.com/en-gb/sysinternals/bb469930> - well worth watching when it's practical to do so.
+Windows includes utilities to tune the performance. Microsoft provides various additional utilities to download, including: PowerToys can help tweak the UI, and [SysInternals utilities](https://technet.microsoft.com/en-gb/sysinternals/bb545021.aspx) enable much greater control and understanding of what your operating system is doing. Microsoft provide training online for SysInternals at <https://technet.microsoft.com/en-gb/sysinternals/bb469930> - well worth watching when it's practical to do so.
 

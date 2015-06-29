@@ -7,7 +7,7 @@ In the last few years and during my travels I've come to the conclusion that the
 Here are my heuristics I'm working towards:
  
 1. the maximum chunk should be designed to fit on a USB stick one could buy at any tourist resort or medium sized city globally e.g. climbing the Andes, at a beach resort in India, in a shopping mall in Nairobi, etc. That's somewhere either 8GB or 16GB currently based on my admittedly very limited research (I check wherever I go in the world). I also consider ways to reduce the chunk size to one that'd fit (and be useful[1]) on a DVD-ROM and even a CD-ROM. The aim is to be able to deliver whatever we want on one or more practical, available pieces of hardware (and by that I include USB sticks, etc).
-2. Modularity helps reduce the update size dramatically. Until recently folk had to redownload the entire image if they want the latest updates. dev.worldpossible.org/mods now allows people to download individual modules (using rsync, which is available in cygwin for Windows users). I'd like to get even more modular.
+2. Modularity helps reduce the update size dramatically. Until recently folk had to redownload the entire image if they want the latest updates. <dev.worldpossible.org/mods> now allows people to download individual modules (using rsync, which is available in cygwin for Windows users). I'd like to get even more modular.
 3. Compression also helps. Emmanuel of Kiwix is helping me with our PhET experiment to see if we can script the packaging of PhET. The principles and the commands we end up using may be generally applicable for rich HTML5 apps.
 
 Money to pay good developers / devops / system administrator people may help us make better progress. Also, the industry is solving these problems for commercial apps, content delivery, etc. so let's investigate the practices that seem to work and try to apply them as a starting point.
@@ -45,7 +45,7 @@ Packaging materials enables them to become a distinct entity, where they can be 
 ###RACHEL Modules
 RACHEL consists of modules that contain various materials, such as videos, web contents, etc. Each package has a consistent structure: each is a separate folder, with a file called `index.htmlf`. 
 
-`index.htmlf` contans HTML, part of a web page, a fragment. The fragment starts with a `<div>` tag and ends with the closing `</div>` tag. The div tag has a class of `indexmodule` which helps keep the styling consistent.
+`index.htmlf` contains HTML, part of a web page, a fragment. The fragment starts with a `<div>` tag and ends with the closing `</div>` tag. The div tag has a class of `indexmodule` which helps keep the styling consistent.
 
 Here's a very simple example, from the current music theory module:
 

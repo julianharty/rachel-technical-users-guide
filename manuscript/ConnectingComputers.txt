@@ -125,5 +125,6 @@ When a computer is configured as a reverse-proxy, it allows connected devices to
 
 The configuration of a reverse-proxy is specific to each desktop operating system. TBC add some links here.
 
+Here's an overview of how to configure a reverse-proxy on OSX <http://makezine.com/2012/07/16/use-your-mac-laptop-as-a-wireless-proxy-for-raspberry-pi/>
 ##Further reading
 I found a very helpful guide on IP protocols and how all this stuff works, at <http://ipprimer.com/#/> perhaps you'll find it useful too? 

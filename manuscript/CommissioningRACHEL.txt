@@ -4,6 +4,13 @@ One way to get RACHEL running on a server is to simply follow the intructions to
 ## Commissioning using image files created by World Possible
 The project team provide documentation online on Google Docs on how to download, install and run RACHEL as a server on Windows computers, details are available at [RACHEL-Pi Download Guide](https://docs.google.com/document/d/1pfuhaV040BhN14uQ511sjmpLqsUzJ6Vy9BIH3KBh7PM/edit)
 
+###Where to find RACHEL online
+
+One of the most reliable locations for RACHEL images is <http://rachelfriends.org/>
+
+RACHEL is also available from the same site using `FTP`.
+
+##What's involved to download and get RACHEL running
 Here we'll summarise the steps needed from starting the download to running RACHEL
 
 * Download (which can take days, and often fails part way through, so we need ways to cope with the unreliable network and Internet connections
