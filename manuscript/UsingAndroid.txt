@@ -57,6 +57,11 @@ When selecting devices it's also worth considering the contexts of use of these 
 
 adb (Android Debug Bridge) provides most of the functionality needed to administer, debug, update and maintain Android devices. Generally we need to instal the software tools, unless someone else has already installed them on the computer we're using. The Android device also needs to be configured to allow the adb software to interact with it. We'll cover what to do shortly in Enabling Debugging.
 
+The mainstream android tools include adb and the related software utilities and tools. However they are quite large (100's of MB) which requires longish, and sometimes expensive downloads, etc. Thankfully there is a script that downloads a minature set of the utilities and tools. They can be downloaded for Linux and Mac computers as follows: `curl -o adb-install.sh  https://raw.githubusercontent.com/corbindavenport/nexus-tools/master/install.sh` Once downloaded the script needs to be run (executed). Generally this is done in a terminal shell using `bash` e.g. 
+`bash adb-install.sh`
+
+Note: to protect your computer you may want to manually review the contents of the adb-install.sh script file before running it.
+   
 ###Enabling Debugging
 
 ###Installing apps
